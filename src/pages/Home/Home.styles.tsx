@@ -20,9 +20,9 @@ export const StyledHeader = styled.header({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        // width: '70%',
-        // marginLeft: 'auto',
-        // marginRight: 'auto',
+        maxWidth: '80rem',
+        marginLeft: 'auto',
+        marginRight: 'auto',
         height: '40px',
         a: {
             fontSize: '2rem',

@@ -1,39 +1,46 @@
-import { StyledCard, StyledContent, StyledDetails, StyledIcons, StyledTitle } from './ProductComponent';
-import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
 
 
-type Item = {
-  id: number;
-  company: string;
-  details: string;
-  content: string;
-};
+export const StyledIcons = styled.nav({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  width: '100%',
 
-type ProductComponentProps = {
-  items: Item[];
-};
+  img: {
+    height: '40px',
+  },
+});
 
+export const StyledCard = styled.div({
+  display: 'flex',
+//   justifyContent: 'space-between',
+//   alignItems: 'center',
+//   width: '80%',
+  marginLeft: '10%',
+  marginRight: '10%',
+  marginTop: '3rem',
+  marginBottom: '3rem',
+    // justifyContent: 'center',
+    paddingTop: '3rem',
+     borderTop: '1px solid lightGrey'
+});
 
-export default function ProductComponent({ items }: ProductComponentProps) {
-  return (
-    <>
-        <StyledIcons>
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-            {/* <img src={NavIcon} alt='Lgog' />
-            <img src={NavIcon} alt='Lgog' /> */}
-        </StyledIcons>
-      <h1>Items for Hire</h1>
-      <div className="item-grid">
-        {items.map(item => (
-          <StyledCard key={item.id}>
-            <StyledTitle className="item-section company">{item.company}</StyledTitle>
-            <StyledDetails className="item-section details">{item.details}</StyledDetails>
-            <StyledContent className="item-section content">{item.content}</StyledContent>
-          </StyledCard>
-        ))}
-      </div>
-    </>
-  );
-}
+export const StyledTitle = styled.div({
+    fontSize: '2rem',
+    flex: '1',
+    alignSelf: 'flex-start',
+});
+
+export const StyledDetails = styled.div({
+    flex: '2',
+    // width: '20rem',
+    marginLeft: '5rem',
+});
+
+export const StyledContent = styled.div({
+    flex: '3',
+    marginLeft: '5rem',
+    alignSelf: 'flex-start',
+
+});

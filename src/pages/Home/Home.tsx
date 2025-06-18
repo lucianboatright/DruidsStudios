@@ -3,6 +3,7 @@ import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
 import { StyledHeader, StyledIcons } from './Home.styles';
 import LogoGrid from '../../Components/LogoGrid/LogoGrid';
+import WhatWeDo from '../../Components/SkillSection/SkillSection';
 
 const logos = [
   { src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg', alt: 'Apple' },
@@ -17,6 +18,25 @@ const logos = [
   { src: 'https://dummyimage.com/200x60/eeeeee/000000.png&text=Logo+Placeholder', alt: 'Placeholder 2' },
 ];
 
+const skills = [
+  'Carpentry',
+  'Scenic Painting',
+  'Prop Making',
+  'Poly Sculpting',
+  'Spray Finishing',
+  'Project Management',
+  'Design',
+  'CAD Drawing and visualisation',
+  'Plastering',
+  'Metal Work',
+  'CNC Machining',
+  'International Work',
+  'Location Work and Standby',
+  'Storage',
+  'Your Project!',
+];
+
+
 export default function Home() {
   return (
     <>
@@ -24,6 +44,7 @@ export default function Home() {
                 <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
             <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
         </StyledIcons>
+        <div>London based set builder </div>
         <img src={DruidLogo} alt='Lgog' />
         <StyledHeader>
             <nav>
@@ -34,6 +55,7 @@ export default function Home() {
                 <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
             </nav>
         </StyledHeader>
+        <WhatWeDo skills={skills} />
         <LogoGrid logos={logos} />
     </>
   )

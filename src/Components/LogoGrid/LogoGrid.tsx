@@ -1,5 +1,5 @@
 import React from 'react';
-import { GridContainer, LogoItem } from './LogoGrid.styles';
+import { GridContainer, LogoItem, StyledTitle } from './LogoGrid.styles';
 
 type Logo = {
   src: string;
@@ -13,13 +13,16 @@ type LogoGridProps = {
 
 const LogoGrid: React.FC<LogoGridProps> = ({ logos }) => {
   return (
-    <GridContainer>
-      {logos.map((logo, idx) => (
-        <LogoItem key={idx}>
-          <img src={logo.src} alt={logo.alt || `Logo ${idx + 1}`} />
-        </LogoItem>
-      ))}
-    </GridContainer>
+    <>
+      <StyledTitle>Collaberations</StyledTitle>
+      <GridContainer>
+        {logos.map((logo, idx) => (
+          <LogoItem key={idx}>
+            <img src={logo.src} alt={logo.alt || `Logo ${idx + 1}`} />
+          </LogoItem>
+        ))}
+      </GridContainer>
+    </>
   );
 };
 
