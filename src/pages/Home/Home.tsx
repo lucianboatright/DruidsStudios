@@ -28,9 +28,10 @@ export default function Home() {
         <StyledHeader>
             <nav>
                 {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
-                <Link to="/contact" style={{ margin: '0 1rem' }}>Contact</Link>
                 <Link to="/builds" style={{ margin: '0 1rem' }}>Builds</Link>
                 <Link to="/hire" style={{ margin: '0 1rem' }}>Hire</Link>
+                <Link to="/contact" style={{ margin: '0 1rem' }}>Contact</Link>
+                <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
             </nav>
         </StyledHeader>
         <LogoGrid logos={logos} />
