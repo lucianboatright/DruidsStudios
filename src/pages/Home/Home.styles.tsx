@@ -26,6 +26,7 @@ export const StyledHeader = styled.header({
       marginRight: 'auto',
     height: '40px',
     a: {
+        fontSize: '2rem',
       textDecoration: 'none',
         '&:hover': {
             background: 'white',
