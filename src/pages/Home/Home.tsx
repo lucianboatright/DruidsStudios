@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <>
         <StyledIcons>
-            <img src={NavIcon} alt='Lgog' />
-            <img src={NavIcon} alt='Lgog' />
+                <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
         </StyledIcons>
         <img src={DruidLogo} alt='Lgog' />
         <StyledHeader>

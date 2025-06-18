@@ -1,4 +1,6 @@
-import { StyledCard, StyledContent, StyledDetails, StyledTitle } from './ProductComponent';
+import { StyledCard, StyledContent, StyledDetails, StyledIcons, StyledTitle } from './ProductComponent';
+import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
+import { Link } from 'react-router-dom';
 
 
 type Item = {
@@ -16,7 +18,13 @@ type ProductComponentProps = {
 export default function ProductComponent({ items }: ProductComponentProps) {
   return (
     <>
-      <h1>Our Items</h1>
+        <StyledIcons>
+            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+            {/* <img src={NavIcon} alt='Lgog' />
+            <img src={NavIcon} alt='Lgog' /> */}
+        </StyledIcons>
+      <h1>Items for Hire</h1>
       <div className="item-grid">
         {items.map(item => (
           <StyledCard key={item.id}>
