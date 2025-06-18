@@ -14,23 +14,25 @@ export const StyledIcons = styled.nav({
 
 export const StyledHeader = styled.header({
 
-  background: 'lightGrey',
-  
-  
-  nav: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      width: '70%',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    height: '40px',
-    a: {
-        fontSize: '2rem',
-      textDecoration: 'none',
-        '&:hover': {
-            background: 'white',
-        },
+    background: 'lightGrey',
+    
+    nav: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        // width: '70%',
+        // marginLeft: 'auto',
+        // marginRight: 'auto',
+        height: '40px',
+        a: {
+            fontSize: '2rem',
+            textDecoration: 'none',
+            '&:hover': {
+                background: 'white',
+            },
+            "@media (max-width: 600px)": {
+                fontSize: '1.2rem',
+            },
     },
   },
 });

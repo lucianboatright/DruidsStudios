@@ -17,7 +17,7 @@ function App() {
           <Link to="/hire" style={{ margin: '0 1rem' }}>Hire</Link>
         </nav>
       </header> */}
-      <main style={{ padding: '2rem' }}>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
