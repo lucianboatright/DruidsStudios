@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
+import Builds from './pages/Builds/Builds';
+import Hire from './pages/HirePage/HirePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* <header style={{ padding: '1rem', backgroundColor: '#f0f0f0' }}>
+        <nav>
+          <Link to="/" style={{ margin: '0 1rem' }}>Home</Link>
+          <Link to="/contact" style={{ margin: '0 1rem' }}>Contact</Link>
+          <Link to="/builds" style={{ margin: '0 1rem' }}>Builds</Link>
+          <Link to="/hire" style={{ margin: '0 1rem' }}>Hire</Link>
+        </nav>
+      </header> */}
+      <main style={{ padding: '2rem' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/builds" element={<Builds />} />
+          <Route path="/hire" element={<Hire />} />
+        </Routes>
+      </main>
+    </Router>
+
   );
 }
 
