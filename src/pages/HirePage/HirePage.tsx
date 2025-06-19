@@ -5,7 +5,7 @@ import image1 from '../../assets/images/20240928_171850.jpg'
 import image2 from '../../assets/images/20240929_094632.jpg'
 import { useState } from 'react';
 import ImageGrid from '../../Components/ImageContainer/ImageContainer';
-import { StyledIcons, StyledHeader, FilterContainer, StyledButton, StyledSpacer, StyledText, StyledTitle, StyledFilterArea } from './Hirepage.styles';
+import { StyledIcons, StyledTitle, StyledHeader, StyledFilterArea, StyledText, FilterContainer, StyledButton, StyledSpacer } from './HirePAge.styles';
 
 
 const items = [
