@@ -15,8 +15,8 @@ export const StyledIcons = styled.nav({
 
 export const StyledCard = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto 50%;
-  grid-template-areas: "section1 section2 section3";
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "section1 section2" "none section3";
   margin: 3rem 10%;
   padding-top: 3rem;
   border-top: 1px solid lightgrey;
@@ -24,10 +24,11 @@ export const StyledCard = styled.div`
   
   @media (max-width: 1000px) {
     margin: 10px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto ;
     grid-template-areas:
-      "section1 section3"
-      "section2 section3";
+      "section1"
+      "section2" 
+      "section3";
   }
   `;
   export const StyledTitle = styled.section({
