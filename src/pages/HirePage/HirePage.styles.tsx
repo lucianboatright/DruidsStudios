@@ -12,6 +12,11 @@ export const StyledIcons = styled.nav({
   },
 });
 
+export const StyledTitle = styled.nav({
+    fontSize: '4rem',
+    textAlign: 'center',
+});
+
 export const StyledHeader = styled.header({
     background: 'lightGrey',
     
@@ -37,8 +42,19 @@ export const StyledHeader = styled.header({
 });
 
 
-export const FilterContainer = styled.div({
+export const StyledFilterArea = styled.div({
   display: 'flex',
+  justifyContent: 'none',
+  
+  marginBottom: '1rem',
+  marginTop: '1rem',
+  "@media (min-width: 1000px)": {
+    justifyContent: 'center',
+    },
+});
+
+export const FilterContainer = styled.div({
+//   display: 'flex',
   justifyContent: 'center',
 
   marginBottom: '1rem',
@@ -48,21 +64,53 @@ export const FilterContainer = styled.div({
     },
 });
 
-export const StyledButton = styled.div({
-  // cursor: `url(${MiddleFinger}), pointer`,
+export const StyledText = styled.div({
+  alignContent: 'end',
   display: 'inline-block',    
   fontFamily: '"Typewriter", sans-serif',
   fontStyle: "normal",
   fontWeight: 400,
   color: "rgba(0, 0, 0, 0.75)",
-  fontSize: "2rem",
+  fontSize: "1.1rem",
+  lineHeight: "1.1",
+  letterSpacing: "0",
+  marginRight: '1rem',
+    "@media (min-width: 1000px)": {
+
+      fontFamily: '"Typewriter", sans-serif',
+      fontStyle: "normal",
+      fontWeight: 400,
+      color: "rgba(0, 0, 0, 0.75)",
+      fontSize: "2rem",
+      lineHeight: "1.3",
+      letterSpacing: "0",
+    },
+});
+
+export const StyledButton = styled.button({
+    all: 'unset', 
+    cursor: 'pointer',
+  textDecoration: 'none',
+  display: 'inline-block',    
+  fontFamily: '"Typewriter", sans-serif',
+  fontStyle: "normal",
+  fontWeight: 400,
+  color: "rgba(0, 0, 0, 0.75)",
+  fontSize: "1.1rem",
   lineHeight: "1.1",
   letterSpacing: "0",
   marginRight: '10px',
-  "@media (min-width: 1000px)": {
-    '&:hover': {
-           background: 'lightGrey',
-       },
+  paddingLeft: '0.2rem',
+  paddingRight: '0.2rem',
+  '&:hover': {
+      background: 'lightGrey',
+    },
+    '&:focus': {
+        backgroundColor: 'lightGrey',
+    },
+    "@media (min-width: 1000px)": {
+        paddingLeft: '1rem',
+        paddingRight: '1rem',
       fontFamily: '"Typewriter", sans-serif',
       fontStyle: "normal",
       fontWeight: 400,

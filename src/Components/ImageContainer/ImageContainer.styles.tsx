@@ -5,6 +5,12 @@ export const Grid = styled.div({
   margin: '2rem 0',
   display:'flex',
   justifyContent: 'space-between',
+  "@media (max-width: 1000px)": {
+      maxWidth: '100%',
+      display:'block',
+
+
+    },
 });
 
 export const Image = styled.img( {

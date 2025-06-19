@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import ProductComponent from '../../Components/ProductComponent/ProductComponent';
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { FilterContainer, StyledButton, StyledHeader, StyledIcons, StyledSpacer } from './Builds.styles';
+import { FilterContainer, StyledButton, StyledHeader, StyledIcons, StyledSpacer, StyledTitle } from './Builds.styles';
 import { useState } from 'react';
 
 import image1 from '../../assets/images/20240928_171850.jpg'
@@ -29,17 +29,19 @@ export default function Builds() {
     <>
        <StyledIcons>
                 <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+        </StyledIcons>
                 <StyledHeader>
                     <nav>
                         {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
-                        <Link to="/home" style={{ margin: '0 1rem' }}>Home</Link>
+                        <Link to="/" style={{ margin: '0 1rem' }}>Home</Link>
                         <Link to="/hire" style={{ margin: '0 1rem' }}>Hire</Link>
                         <Link to="/contact" style={{ margin: '0 1rem' }}>Contact</Link>
                         <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
                     </nav>
                 </StyledHeader>
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-        </StyledIcons>
+                <StyledTitle>Built Projects</StyledTitle>
+        
         <FilterContainer>
           <StyledButton onClick={() => setActiveFilter("All")}>Filters:</StyledButton>
           {/* <div>Filters:</div> */}

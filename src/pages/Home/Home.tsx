@@ -55,8 +55,8 @@ export default function Home() {
                 <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
             </nav>
         </StyledHeader>
-        <WhatWeDo skills={skills} />
         <LogoGrid logos={logos} />
+        <WhatWeDo skills={skills} />
     </>
   )
 }
