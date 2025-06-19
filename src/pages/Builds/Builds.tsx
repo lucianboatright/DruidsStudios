@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import ProductComponent from '../../Components/ProductComponent/ProductComponent';
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { FilterContainer, StyledButton, StyledHeader, StyledIcons, StyledSpacer, StyledTitle } from './Builds.styles';
+import { FilterContainer, StyledButton, StyledFilterArea, StyledHeader, StyledIcons, StyledSpacer, StyledText, StyledTitle } from './Builds.styles';
 import { useState } from 'react';
 import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 import image1 from '../../assets/images/20240928_171850.jpg'
@@ -43,20 +43,22 @@ export default function Builds() {
                 </StyledHeader>
                 <StyledTitle>Built Projects</StyledTitle>
         
-        <FilterContainer>
-          <StyledButton onClick={() => setActiveFilter("All")}>Filters:</StyledButton>
-          {/* <div>Filters:</div> */}
-          <StyledSpacer>-</StyledSpacer>
-          <StyledButton onClick={() => setActiveFilter("Shop")}>Shop</StyledButton>
-          <StyledSpacer>-</StyledSpacer>
-          <StyledButton onClick={() => setActiveFilter("Theater")}>Theater</StyledButton>
-          <StyledSpacer>-</StyledSpacer>
-          <StyledButton onClick={() => setActiveFilter("Props")}>Props</StyledButton>
-          <StyledSpacer>-</StyledSpacer>
-          <StyledButton onClick={() => setActiveFilter("Adverts")}>Adverts</StyledButton>
-          <StyledSpacer>-</StyledSpacer>
-          <StyledButton onClick={() => setActiveFilter("ALL")}>View All</StyledButton>
-        </FilterContainer>
+                <StyledFilterArea>
+                    <StyledText onClick={() => setActiveFilter("All")}>Filters:</StyledText>
+                  <FilterContainer>
+                    {/* <div>Filters:</div> */}
+                    {/* <StyledSpacer>-</StyledSpacer> */}
+                    <StyledButton onClick={() => setActiveFilter("Shop")}>Shop</StyledButton>
+                    <StyledSpacer>-</StyledSpacer>
+                    <StyledButton onClick={() => setActiveFilter("Theater")}>Theater</StyledButton>
+                    <StyledSpacer>-</StyledSpacer>
+                    <StyledButton onClick={() => setActiveFilter("Props")}>Props</StyledButton>
+                    <StyledSpacer>-</StyledSpacer>
+                    <StyledButton onClick={() => setActiveFilter("Adverts")}>Adverts</StyledButton>
+                    <StyledSpacer>-</StyledSpacer>
+                    <StyledButton onClick={() => setActiveFilter("ALL")}>View All</StyledButton>
+                  </FilterContainer>
+                </StyledFilterArea>
       <ProductComponent items={filteredSections}   />
     </>
   );
