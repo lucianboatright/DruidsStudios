@@ -4,7 +4,7 @@ import ProductComponent from '../../Components/ProductComponent/ProductComponent
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
 import { FilterContainer, StyledButton, StyledHeader, StyledIcons, StyledSpacer, StyledTitle } from './Builds.styles';
 import { useState } from 'react';
-
+import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 import image1 from '../../assets/images/20240928_171850.jpg'
 import image2 from '../../assets/images/20240929_094632.jpg'
 import ImageGrid from '../../Components/ImageContainer/ImageContainer';
@@ -29,6 +29,7 @@ export default function Builds() {
     <>
        <StyledIcons>
                 <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+                                        <img src={DruidLogo} alt='Lgog' />
             <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
         </StyledIcons>
                 <StyledHeader>

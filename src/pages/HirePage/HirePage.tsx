@@ -6,6 +6,7 @@ import image2 from '../../assets/images/20240929_094632.jpg'
 import { useState } from 'react';
 import ImageGrid from '../../Components/ImageContainer/ImageContainer';
 import { StyledIcons, StyledTitle, StyledHeader, StyledFilterArea, StyledText, FilterContainer, StyledButton, StyledSpacer } from './HirePages.styles';
+import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 
 
 const items = [
@@ -27,9 +28,9 @@ export default function Hire() {
     <>
        <StyledIcons>
                 <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+                        <img src={DruidLogo} alt='Lgog' />                
             <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
         </StyledIcons>
-        <StyledTitle>Hire Products</StyledTitle>
                 <StyledHeader>
                     <nav>
                         {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
@@ -39,6 +40,7 @@ export default function Hire() {
                         <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
                     </nav>
                 </StyledHeader>
+        <StyledTitle>Hire Products</StyledTitle>
                 <StyledFilterArea>
                     <StyledText onClick={() => setActiveFilter("All")}>Filters:</StyledText>
                   <FilterContainer>

@@ -44,8 +44,8 @@ export default function Home() {
                 <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
             <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
         </StyledIcons>
-        <div>London based set builder </div>
         <img src={DruidLogo} alt='Lgog' />
+        <div>London based set builder </div>
         <StyledHeader>
             <nav>
                 {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}

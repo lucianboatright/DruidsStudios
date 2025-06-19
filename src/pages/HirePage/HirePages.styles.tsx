@@ -65,18 +65,18 @@ export const FilterContainer = styled.div({
 });
 
 export const StyledText = styled.div({
-  alignContent: 'end',
-  display: 'inline-block',    
-  fontFamily: '"Typewriter", sans-serif',
-  fontStyle: "normal",
-  fontWeight: 400,
-  color: "rgba(0, 0, 0, 0.75)",
-  fontSize: "1.1rem",
-  lineHeight: "1.1",
-  letterSpacing: "0",
-  marginRight: '1rem',
+    alignContent: 'space-around',
+    display: 'inline-block',    
+    fontFamily: '"Typewriter", sans-serif',
+    fontStyle: "normal",
+    fontWeight: 400,
+    color: "rgba(0, 0, 0, 0.75)",
+    fontSize: "1.1rem",
+    lineHeight: "1.1",
+    letterSpacing: "0",
+    marginRight: '1rem',
     "@media (min-width: 1000px)": {
-
+      alignContent: 'end',
       fontFamily: '"Typewriter", sans-serif',
       fontStyle: "normal",
       fontWeight: 400,

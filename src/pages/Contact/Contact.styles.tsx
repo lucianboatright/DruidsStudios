@@ -11,3 +11,38 @@ export const StyledIcons = styled.nav({
     height: '40px',
   },
 });
+
+export const StyledContactTitle = styled.nav({
+  fontSize: '2rem',
+  marginBottom: '2rem',
+});
+
+export const StyledContactText = styled.nav({
+  fontSize: '2rem',
+});
+
+
+
+export const StyledHeader = styled.header({
+    background: 'lightGrey',
+    
+    nav: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        maxWidth: '80rem',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        height: '40px',
+        a: {
+            fontSize: '2rem',
+            textDecoration: 'none',
+            '&:hover': {
+                background: 'white',
+            },
+            "@media (max-width: 600px)": {
+                fontSize: '1.2rem',
+            },
+    },
+  },
+});
