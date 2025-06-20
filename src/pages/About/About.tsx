@@ -48,7 +48,6 @@ export default function Contact() {
               <StyledImage  src={DruidLogo} alt='Lgog' />
             <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
         </StyledIcons>
-    <h1>Welcome to the About Page</h1>
             <StyledHeader>
                 <nav>
                     {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
