@@ -14,7 +14,6 @@ type LogoGridProps = {
 const LogoGrid: React.FC<LogoGridProps> = ({ logos }) => {
   return (
     <>
-      <StyledTitle>Collaberations</StyledTitle>
       <GridContainer>
         {logos.map((logo, idx) => (
           <LogoItem key={idx}>

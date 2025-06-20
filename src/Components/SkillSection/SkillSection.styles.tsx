@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 
 export const SectionWrapper = styled.section({
-  backgroundColor: '#333',
-  color: '#fff',
+  backgroundColor: 'rgb(31, 50, 37)',
   padding: '4rem 2rem',
   textAlign: 'center',
 });
@@ -12,7 +11,7 @@ export const Title = styled.h2({
   fontSize: '2.5rem',
   marginBottom: '3rem',
   fontWeight: '700',
-  color: '#fff',
+  color: 'rgb(217, 189, 119)',
 
   span: {
     color: '#ff7a00', 
@@ -39,10 +38,11 @@ export const SkillItem = styled.li({
   marginBottom: '0.75rem',
   display: 'flex',
   alignItems: 'center',
+  color: 'rgb(217, 189, 119)',
 
   '&::before': {
     content: '"•"',
-    color: 'yellow',
+    color: '#ff7a00', 
     marginRight: '0.75rem',
     fontSize: '1.5rem',
     lineHeight: '1',

@@ -5,7 +5,7 @@ import image1 from '../../assets/images/20240928_171850.jpg'
 import image2 from '../../assets/images/20240929_094632.jpg'
 import { useState } from 'react';
 import ImageGrid from '../../Components/ImageContainer/ImageContainer';
-import { StyledIcons, StyledTitle, StyledHeader, StyledFilterArea, StyledText, FilterContainer, StyledButton, StyledSpacer } from './HirePages.styles';
+import { StyledIcons, StyledLink, StyledImage, StyledTitle, StyledHeader, StyledFilterArea, StyledText, FilterContainer, StyledButton, StyledSpacer } from './HirePages.styles';
 import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 
 
@@ -26,10 +26,10 @@ export default function Hire() {
     const filteredSections = activeFilter === "ALL" ? items : items.filter(section => section.category === activeFilter);
   return (
     <>
-       <StyledIcons>
-                <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-                        <img src={DruidLogo} alt='Lgog' />                
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+        <StyledIcons>
+                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
+              <StyledImage  src={DruidLogo} alt='Lgog' />
+            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
         </StyledIcons>
                 <StyledHeader>
                     <nav>

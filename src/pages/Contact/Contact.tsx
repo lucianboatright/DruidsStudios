@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom'
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { StyledContactText, StyledContactTitle, StyledHeader, StyledIcons } from './Contact.styles'
+import { StyledContactText, StyledTitle, StyledLink, StyledContactTitle, StyledHeader, StyledIcons, StyledImage } from './Contact.styles'
+import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 
 
 export default function Contact() {
   return (
     <>
-               <StyledIcons>
-                <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+        <StyledIcons>
+                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
+              <StyledImage  src={DruidLogo} alt='Lgog' />
+            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
         </StyledIcons>
-      <h1>Welcome to the Contact Page</h1>;
+        <StyledTitle>Hire Products</StyledTitle>
         <StyledHeader>
             <nav>
                 {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}

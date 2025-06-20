@@ -1,13 +1,34 @@
 import { Link } from 'react-router-dom';
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { StyledContactText, StyledHeader, StyledIcons } from './About.styles';
+import { Grid, StyledHeader, StyledIcons, StyledImage, StyledLink } from './About.styles';
+import TeamCard from '../../Components/TeamCard/teamCard';
+import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
+
+import ElenaImage from '../../assets/profilePics/Elena_omura.png'
+import MithilaImage from '../../assets/profilePics/Mithila_joshi.png'
+
+const team = [
+    {
+      image: ElenaImage,
+      name: 'Elena Omura',
+      title: 'CEO, Founder & Creative Producer',
+    },
+    {
+      image: MithilaImage,
+      name: 'Mithila Joshi',
+      title: 'Executive Director & Creative Producer',
+    },
+
+];
+
 
 export default function Contact() {
   return (
     <>
-           <StyledIcons>
-                <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+        <StyledIcons>
+                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
+              <StyledImage  src={DruidLogo} alt='Lgog' />
+            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
         </StyledIcons>
     <h1>Welcome to the About Page</h1>
             <StyledHeader>
@@ -19,9 +40,12 @@ export default function Contact() {
                     <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
                 </nav>
             </StyledHeader>
-            <StyledContactText>
-              Email: druids@gmail.com
-            </StyledContactText>
+    
+      <Grid>
+        {team.map((member) => (
+          <TeamCard key={member.name} {...member} />
+        ))}
+      </Grid>
     </>
   )
     

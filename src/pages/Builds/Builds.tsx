@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import ProductComponent from '../../Components/ProductComponent/ProductComponent';
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { FilterContainer, StyledButton, StyledFilterArea, StyledHeader, StyledIcons, StyledSpacer, StyledText, StyledTitle } from './Builds.styles';
+import { FilterContainer, StyledButton, StyledFilterArea, StyledHeader, StyledIcons, StyledImage, StyledLink, StyledSpacer, StyledText, StyledTitle } from './Builds.styles';
 import { useState } from 'react';
 import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 import image1 from '../../assets/images/20240928_171850.jpg'
@@ -27,10 +27,10 @@ export default function Builds() {
   const filteredSections = activeFilter === "ALL" ? items : items.filter(section => section.category === activeFilter);
   return (
     <>
-       <StyledIcons>
-                <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-                                        <img src={DruidLogo} alt='Lgog' />
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+        <StyledIcons>
+                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
+              <StyledImage  src={DruidLogo} alt='Lgog' />
+            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
         </StyledIcons>
                 <StyledHeader>
                     <nav>

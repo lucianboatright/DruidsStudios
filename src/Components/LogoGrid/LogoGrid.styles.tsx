@@ -10,12 +10,15 @@ marginTop: '2rem',
 });
 
 export const GridContainer = styled.div({
-    marginTop: '2rem',
+    marginTop: '4rem',
+    marginBottom: '4rem',
   display: 'grid',
   gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
   gap: '1.5rem',
   padding: '1rem',
-  alignItems: 'center',
+  maxWidth: '80%',
+  marginRight: 'auto',
+  marginLeft: 'auto',
 });
 
 export const LogoItem = styled.div({

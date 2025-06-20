@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { StyledHeader, StyledIcons } from './Home.styles';
+import MainImage from '../../assets/images/testworkshop.jpg'
+import { StyledHeader, StyledIcons, StyledImage, StyledLink, StyledMainImage, StyledTitle } from './Home.styles';
 import LogoGrid from '../../Components/LogoGrid/LogoGrid';
 import WhatWeDo from '../../Components/SkillSection/SkillSection';
 
@@ -41,11 +42,14 @@ export default function Home() {
   return (
     <>
         <StyledIcons>
-                <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
-            <Link to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></Link>
+                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
+              <StyledImage  src={DruidLogo} alt='Lgog' />
+            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
         </StyledIcons>
-        <img src={DruidLogo} alt='Lgog' />
-        <div>London based set builder </div>
+        <StyledTitle>Lets start getting it built</StyledTitle>
+        <StyledMainImage>
+          <img src={MainImage} alt='Lgog' />
+        </StyledMainImage>
         <StyledHeader>
             <nav>
                 {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
