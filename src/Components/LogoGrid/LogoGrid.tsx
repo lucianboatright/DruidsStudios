@@ -1,5 +1,5 @@
 import React from 'react';
-import { GridContainer, LogoItem, StyledTitle } from './LogoGrid.styles';
+import { GridContainer, LogoItem } from './LogoGrid.styles';
 
 type Logo = {
   src: string;
