@@ -84,10 +84,18 @@ export const StyledHeader = styled.header({
   `;
   
   export const Grid = styled.div`
-    gap: 2rem;
-    margin-left: 50px;
+    // margin-left: 50px;
     margin-top: 5rem;
-
     margin-left: auto;
     margin-right: auto;
 `;
+
+export const StyledTitle = styled.nav({
+    fontSize: '4rem',
+    textAlign: 'center',
+});
+
+export const StyledGrid = styled.nav({
+        marginLeft: 'auto',
+        marginRight: 'auto',
+});
