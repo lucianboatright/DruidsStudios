@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { Grid, StyledHeader, StyledGrid, StyledTitle, StyledIcons, StyledImage, StyledLink } from './About.styles';
+import { Grid, StyledGrid, StyledTitle } from './About.styles';
 import TeamCard from '../../Components/TeamCard/teamCard';
-import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 import WhatWeDo from '../../Components/SkillSection/SkillSection';
 import ElenaImage from '../../assets/profilePics/Elena_omura.png'
 import MithilaImage from '../../assets/profilePics/Mithila_joshi.png'
+import HeaderSection from '../../Components/HeaderSection/headerSection';
+import NarBar from '../../Components/NavBar/navBar';
 
 const team = [
     {
@@ -43,20 +42,15 @@ const skills = [
 export default function Contact() {
   return (
     <>
-        <StyledIcons>
-                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
-              <StyledImage  src={DruidLogo} alt='Lgog' />
-            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
-        </StyledIcons>
-            <StyledHeader>
-                <nav>
-                    {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
-                    <Link to="/" style={{ margin: '0 1rem' }}>Home</Link>
-                    <Link to="/builds" style={{ margin: '0 1rem' }}>Builds</Link>
-                    <Link to="/contact" style={{ margin: '0 1rem' }}>Contact</Link>
-                    <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
-                </nav>
-            </StyledHeader>
+        <HeaderSection />
+                <NarBar
+                  links={[
+                    { to: '/builds', label: 'Builds' },
+                    { to: '/hire', label: 'Hire' },
+                    { to: '/contact', label: 'Contact' },
+                    { to: '/about', label: 'About' },
+                  ]}
+                />
     <StyledGrid>
         <Grid>
           {team.map((member) => (

@@ -48,35 +48,6 @@ export const StyledContactText = styled.nav({
 //     },
 // });
 
-export const StyledHeader = styled.header({
-
-    // background: 'lightGrey',
-    
-    nav: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        maxWidth: '80rem',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        
-        height: '40px',
-        a: {
-          color: 'rgb(217, 189, 119)',
-            fontSize: '4rem',
-            fontWeight: '600',
-            textDecoration: 'none',
-            borderRadius: '0.5rem',
-            '&:hover': {
-              padding: '0.3rem 2rem',
-                background: 'white',
-            },
-            "@media (max-width: 600px)": {
-                fontSize: '1.2rem',
-            },
-    },
-  },
-});
 
   export const Title = styled.h2`
     font-size: 2rem;

@@ -1,13 +1,13 @@
 // import React, { useState } from "react";
-import { Link } from 'react-router-dom';
 import ProductComponent from '../../Components/ProductComponent/ProductComponent';
-import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
-import { FilterContainer, StyledButton, StyledFilterArea, StyledHeader, StyledIcons, StyledImage, StyledLink, StyledSpacer, StyledText, StyledTitle } from './Builds.styles';
+import { StyledTitle } from './Builds.styles';
 import { useState } from 'react';
-import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
 import image1 from '../../assets/images/20240928_171850.jpg'
 import image2 from '../../assets/images/20240929_094632.jpg'
 import ImageGrid from '../../Components/ImageContainer/ImageContainer';
+import HeaderSection from '../../Components/HeaderSection/headerSection';
+import NarBar from '../../Components/NavBar/navBar';
+import { FilterSection } from '../../Components/FilterSection/filterSection';
 
 
 const items = [
@@ -27,38 +27,27 @@ export default function Builds() {
   const filteredSections = activeFilter === "ALL" ? items : items.filter(section => section.category === activeFilter);
   return (
     <>
-        <StyledIcons>
-                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
-              <StyledImage  src={DruidLogo} alt='Lgog' />
-            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
-        </StyledIcons>
-                <StyledHeader>
-                    <nav>
-                        {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
-                        <Link to="/" style={{ margin: '0 1rem' }}>Home</Link>
-                        <Link to="/hire" style={{ margin: '0 1rem' }}>Hire</Link>
-                        <Link to="/contact" style={{ margin: '0 1rem' }}>Contact</Link>
-                        <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
-                    </nav>
-                </StyledHeader>
+       <HeaderSection />
+                <NarBar
+                  links={[
+                    { to: '/', label: 'Home' },
+                    { to: '/hire', label: 'Hire' },
+                    { to: '/contact', label: 'Contact' },
+                    { to: '/about', label: 'About' },
+                  ]}
+                />
                 <StyledTitle>Built Projects</StyledTitle>
         
-                <StyledFilterArea>
-                    <StyledText onClick={() => setActiveFilter("All")}>Filters:</StyledText>
-                  <FilterContainer>
-                    {/* <div>Filters:</div> */}
-                    {/* <StyledSpacer>-</StyledSpacer> */}
-                    <StyledButton onClick={() => setActiveFilter("Shop")}>Shop</StyledButton>
-                    <StyledSpacer>-</StyledSpacer>
-                    <StyledButton onClick={() => setActiveFilter("Theater")}>Theater</StyledButton>
-                    <StyledSpacer>-</StyledSpacer>
-                    <StyledButton onClick={() => setActiveFilter("Props")}>Props</StyledButton>
-                    <StyledSpacer>-</StyledSpacer>
-                    <StyledButton onClick={() => setActiveFilter("Adverts")}>Adverts</StyledButton>
-                    <StyledSpacer>-</StyledSpacer>
-                    <StyledButton onClick={() => setActiveFilter("ALL")}>View All</StyledButton>
-                  </FilterContainer>
-                </StyledFilterArea>
+                <FilterSection   filters={[
+                    { label: 'Shop', value: 'Shop' },
+                    { label: 'Theater', value: 'Theater' },
+                    { label: 'Props', value: 'Props' },
+                    { label: 'Adverts', value: 'Adverts' },
+                    { label: 'View All', value: 'ALL' },
+                  ]}
+                  setActiveFilter={setActiveFilter}
+                />
+ 
       <ProductComponent items={filteredSections}   />
     </>
   );

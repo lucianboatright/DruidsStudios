@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
-import DruidLogo from '../../assets/logos/Principal_Onyx.svg'
-import NavIcon from '../../assets/logos/ElementThree_Lime.svg'
 import MainImage from '../../assets/images/testworkshop.jpg'
-import { StyledHeader, StyledIcons, StyledImage, StyledLink, StyledMainImage, StyledTitle } from './Home.styles';
+import { StyledMainImage } from './Home.styles';
 import LogoGrid from '../../Components/LogoGrid/LogoGrid';
 import WhatWeDo from '../../Components/SkillSection/SkillSection';
+import HeaderSection from '../../Components/HeaderSection/headerSection';
+import NarBar from '../../Components/NavBar/navBar';
 
 const logos = [
   { src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg', alt: 'Apple' },
@@ -41,24 +40,19 @@ const skills = [
 export default function Home() {
   return (
     <>
-        <StyledIcons>
-                <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
-              <StyledImage  src={DruidLogo} alt='Lgog' />
-            <StyledLink to="/" style={{ margin: '0 1rem' }}><img src={NavIcon} alt='Lgog' /></StyledLink>
-        </StyledIcons>
-        <StyledTitle>Lets start getting it built</StyledTitle>
+       <HeaderSection />
         <StyledMainImage>
           <img src={MainImage} alt='Lgog' />
         </StyledMainImage>
-        <StyledHeader>
-            <nav>
-                {/* <Link to="/" style={{ margin: '0 1rem' }}>Home</Link> */}
-                <Link to="/builds" style={{ margin: '0 1rem' }}>Builds</Link>
-                <Link to="/hire" style={{ margin: '0 1rem' }}>Hire</Link>
-                <Link to="/contact" style={{ margin: '0 1rem' }}>Contact</Link>
-                <Link to="/about" style={{ margin: '0 1rem' }}>About</Link>
-            </nav>
-        </StyledHeader>
+        <NarBar
+          links={[
+            { to: '/builds', label: 'Builds' },
+            { to: '/hire', label: 'Hire' },
+            { to: '/contact', label: 'Contact' },
+            { to: '/about', label: 'About' },
+          ]}
+        />
+
         <LogoGrid logos={logos} />
         <WhatWeDo skills={skills} />
     </>
