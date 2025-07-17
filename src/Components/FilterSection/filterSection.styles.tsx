@@ -55,24 +55,3 @@ export const StyledButton = styled.button({
       letterSpacing: "0",
     },
 });
-
-export const StyledSpacer = styled.div({
-  display: 'inline-block',    
-  fontFamily: '"Typewriter", sans-serif',
-  fontStyle: "normal",
-  fontWeight: 400,
-  color: 'rgb(217, 189, 119)',
-  fontSize: "2rem",
-  lineHeight: "1.1",
-  letterSpacing: "0",
-  marginRight: '10px',
-  "@media (min-width: 1000px)": {
-      fontFamily: '"Typewriter", sans-serif',
-      fontStyle: "normal",
-      fontWeight: 400,
-      color: 'rgb(217, 189, 119)',
-      fontSize: "2rem",
-      lineHeight: "1.3",
-      letterSpacing: "0",
-    },
-});

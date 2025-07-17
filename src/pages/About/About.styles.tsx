@@ -56,11 +56,6 @@ export const Grid = styled.div({
     },
 });
 
-export const StyledTitle = styled.nav({
-    fontSize: '4rem',
-    textAlign: 'center',
-});
-
 export const StyledGrid = styled.nav({
         marginLeft: 'auto',
         marginRight: 'auto',
