@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledFilterArea, FilterContainer, StyledButton, StyledSpacer } from './filterSection.styles';
+import { StyledButton, StyledList, StyledSpacer } from './filterSection.styles';
 
 type FilterItem = {
   label: string;
@@ -13,18 +13,22 @@ type FilterSectionProps = {
 
 export function FilterSection({ filters, setActiveFilter }: FilterSectionProps) {
   return (
-    <StyledFilterArea>
-      {/* <StyledText onClick={() => setActiveFilter('All')}>Filters:</StyledText> */}
-      <FilterContainer>
-        {filters.map((filter, index) => (
-          <React.Fragment key={filter.value}>
-            <StyledButton onClick={() => setActiveFilter(filter.value)}>
-              {filter.label}
-            </StyledButton>
-            {index < filters.length - 1 && <StyledSpacer>-</StyledSpacer>}
-          </React.Fragment>
-        ))}
-      </FilterContainer>
-    </StyledFilterArea>
+      <>
+        <StyledList>
+
+          {filters.map((filter, index) => (
+            <React.Fragment key={filter.value}>
+              {index < filters.length - 1 && 
+              <li>
+                <StyledButton onClick={() => setActiveFilter(filter.value)}>
+                  {filter.label}
+                </StyledButton>
+              </li>
+                }
+              {/* {index < filters.length - 1 && <StyledSpacer>-</StyledSpacer>} */}
+            </React.Fragment>
+          ))}
+        </StyledList>
+        </>
   );
 }

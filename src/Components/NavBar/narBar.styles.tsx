@@ -6,10 +6,12 @@ export const StyledHeader = styled.header({
     marginTop: '4rem',
     marginBottom: '4rem',
   
-            "@media (max-width: 765px)": {
-                marginTop: '1rem',
-                marginBottom: '1rem',
-            },
+    "@media (max-width: 765px)": {
+        marginLeft: '5%',
+        marginRight: '5%',
+        marginTop: '1rem',
+        marginBottom: '1rem',
+    },
 
     nav: {
         display: 'flex',
@@ -32,7 +34,7 @@ export const StyledHeader = styled.header({
             },
             "@media (max-width: 765px)": {
                 fontSize: '1.5rem',
-                padding: '0px 10px',
+                padding: '0px 5px',
                 borderRadius: '0.25rem',
                 // textDecoration: 'underline',
                 '&:hover': {

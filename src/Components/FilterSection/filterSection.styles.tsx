@@ -1,26 +1,18 @@
 import styled from 'styled-components'
 
 
-export const StyledFilterArea = styled.div({
-  marginBottom: '1rem',
-  marginTop: '1rem',
-  "@media (min-width: 1000px)": {
-    // justifyContent: 'center',
-    // width: '40rem',
-    },
-});
-
-export const FilterContainer = styled.div({
-  marginBottom: '1rem',
-  marginTop: '1rem',
-  "@media (min-width: 1000px)": {
-    marginBottom: '0rem',
-    },
-});
 
 export const StyledTitle = styled.nav({
     fontSize: '4rem',
     textAlign: 'center',
+});
+
+export const StyledList = styled.nav({
+  marginTop: '1rem',
+    display: 'flex',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+      justifyContent: 'space-between',
 });
 
 
