@@ -15,7 +15,7 @@ export const StyledIcons = styled.nav({
 
 export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   display: 'grid',
-  gridTemplateColumns: '5rem auto auto',
+  gridTemplateColumns: '8rem auto auto',
   // gridTemplateAreas: props.contentLength ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
   gridTemplateAreas: props.hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
   marginLeft: '5%',
@@ -28,7 +28,7 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   gap: '1rem',
 
   '@media (max-width: 1000px)': {
-    margin: '10px',
+    margin: '30px 10px 10px 10px',
     gridTemplateColumns: 'auto',
     gridTemplateAreas: `
       "section1"
@@ -87,7 +87,7 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
     gridArea: 'section4',
     // flex: '3',
     // marginTop: '1rem',
-    marginLeft: '11rem',
+    marginLeft: '15rem',
     // alignSelf: 'flex-start',
 
     

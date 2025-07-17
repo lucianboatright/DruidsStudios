@@ -42,6 +42,7 @@ export const StyledIcons = styled.nav<{ greaterthanthree?: boolean}>(props => ({
     transition: 'transform 0.2s ease-in-out',
     "@media (min-width: 1000px)": {
         maxWidth: props.greaterthanthree ? '32%' : '50%',
+        maxHeight: '30rem',
         marginRight: '0.5rem',
     },
     ':hover': {

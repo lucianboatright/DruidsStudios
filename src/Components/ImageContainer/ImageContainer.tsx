@@ -16,7 +16,6 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
   };
 
   const greaterthanthree = images.length > 2
-  console.log('greaterthanthree', greaterthanthree)
 
 
   return (
