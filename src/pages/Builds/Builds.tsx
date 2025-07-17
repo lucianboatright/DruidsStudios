@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 import ProductComponent from '../../Components/ProductComponent/ProductComponent';
-import { StyledTitle } from './Builds.styles';
+import { StyledBox, StyledTitle } from './Builds.styles';
 import { useState } from 'react';
 import image1 from '../../assets/images/20240928_171850.jpg'
 import image2 from '../../assets/images/20240929_094632.jpg'
@@ -37,18 +37,20 @@ export default function Builds() {
                     { to: '/contact', label: 'Contact' },
                   ]}
                 />
-                <StyledTitle>Portfolio of Built Projects</StyledTitle>
-        
-                <FilterSection   filters={[
-                    { label: 'Shop', value: 'Shop' },
-                    { label: 'Theater', value: 'Theater' },
-                    { label: 'Props', value: 'Props' },
-                    { label: 'Adverts', value: 'Adverts' },
-                    { label: 'View All', value: 'ALL' },
-                  ]}
-                  setActiveFilter={setActiveFilter}
-                />
- 
+                <StyledBox>
+                  <StyledTitle>Filter By Projects:</StyledTitle>
+          
+                  <FilterSection   filters={[
+                      { label: 'Shop', value: 'Shop' },
+                      { label: 'Theater', value: 'Theater' },
+                      { label: 'Props', value: 'Props' },
+                      { label: 'Adverts', value: 'Adverts' },
+                      { label: 'View All', value: 'ALL' },
+                    ]}
+                    setActiveFilter={setActiveFilter}
+                  />
+                </StyledBox>
+
       <ProductComponent items={filteredSections}   />
       <Footer />
     </>

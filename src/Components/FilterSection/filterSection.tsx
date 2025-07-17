@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledFilterArea, StyledText, FilterContainer, StyledButton, StyledSpacer } from './filterSection.styles';
+import { StyledFilterArea, FilterContainer, StyledButton, StyledSpacer } from './filterSection.styles';
 
 type FilterItem = {
   label: string;
@@ -14,7 +14,7 @@ type FilterSectionProps = {
 export function FilterSection({ filters, setActiveFilter }: FilterSectionProps) {
   return (
     <StyledFilterArea>
-      <StyledText onClick={() => setActiveFilter('All')}>Filters:</StyledText>
+      {/* <StyledText onClick={() => setActiveFilter('All')}>Filters:</StyledText> */}
       <FilterContainer>
         {filters.map((filter, index) => (
           <React.Fragment key={filter.value}>

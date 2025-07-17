@@ -18,9 +18,13 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   gridTemplateColumns: '5rem auto auto',
   // gridTemplateAreas: props.contentLength ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
   gridTemplateAreas: props.hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
-  margin: '3rem 5%',
-  paddingTop: '3rem',
+  marginLeft: '5%',
+  marginRight: '5%',
+  paddingTop: '2rem',
+  // paddingBottom: '1rem',
+  // borderBottom: '1px solid rgb(217, 189, 119)',
   borderTop: '1px solid rgb(217, 189, 119)',
+
   gap: '1rem',
 
   '@media (max-width: 1000px)': {
@@ -82,12 +86,12 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   export const StyledContent = styled.section({
     gridArea: 'section4',
     // flex: '3',
-    marginTop: '1rem',
+    // marginTop: '1rem',
     marginLeft: '11rem',
     // alignSelf: 'flex-start',
 
     
     "@media (max-width: 1000px)": {
-        marginLeft: '1rem',
+        marginLeft: '0rem',
       },
 });

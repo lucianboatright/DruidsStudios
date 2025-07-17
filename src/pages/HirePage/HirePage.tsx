@@ -3,7 +3,7 @@ import image1 from '../../assets/images/20240928_171850.jpg'
 import image2 from '../../assets/images/20240929_094632.jpg'
 import { useState } from 'react';
 import ImageGrid from '../../Components/ImageContainer/ImageContainer';
-import { StyledTitle } from './HirePages.styles';
+import { StyledBox, StyledTitle } from './HirePages.styles';
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
 import { FilterSection } from '../../Components/FilterSection/filterSection';
@@ -36,16 +36,18 @@ export default function Hire() {
                     { to: '/contact', label: 'Contact' },
                   ]}
                 />
-        <StyledTitle>Products For Hire </StyledTitle>
-          <FilterSection   filters={[
-                    { label: 'Shop', value: 'Shop' },
-                    { label: 'Theater', value: 'Theater' },
-                    { label: 'Props', value: 'Props' },
-                    { label: 'Adverts', value: 'Adverts' },
-                    { label: 'View All', value: 'ALL' },
-                  ]}
-                  setActiveFilter={setActiveFilter}
-                />
+                <StyledBox>
+                  <StyledTitle>Filter For Hire:</StyledTitle>
+                    <FilterSection   filters={[
+                        { label: 'Shop', value: 'Shop' },
+                        { label: 'Theater', value: 'Theater' },
+                        { label: 'Props', value: 'Props' },
+                        { label: 'Adverts', value: 'Adverts' },
+                        { label: 'View All', value: 'ALL' },
+                      ]}
+                      setActiveFilter={setActiveFilter}
+                    />
+                </StyledBox>
       <ProductComponent items={filteredSections}   />
       <Footer />
     </>

@@ -2,46 +2,19 @@ import styled from 'styled-components'
 
 
 export const StyledFilterArea = styled.div({
-  display: 'flex',
-  justifyContent: 'none',
-  
   marginBottom: '1rem',
   marginTop: '1rem',
   "@media (min-width: 1000px)": {
-    justifyContent: 'center',
+    // justifyContent: 'center',
+    // width: '40rem',
     },
 });
 
 export const FilterContainer = styled.div({
-  justifyContent: 'center',
-
   marginBottom: '1rem',
   marginTop: '1rem',
   "@media (min-width: 1000px)": {
     marginBottom: '0rem',
-    },
-});
-
-export const StyledText = styled.div({
-    alignContent: 'space-around',
-    display: 'inline-block',    
-    fontFamily: '"Typewriter", sans-serif',
-    fontStyle: "normal",
-    fontWeight: 800,
-    color: 'rgb(217, 189, 119)',
-    fontSize: "1.1rem",
-    lineHeight: "1.1",
-    letterSpacing: "0",
-    marginRight: '1rem',
-    "@media (min-width: 1000px)": {
-      alignContent: 'end',
-      fontFamily: '"Typewriter", sans-serif',
-      fontStyle: "normal",
-      fontWeight: 400,
-      color: 'rgb(217, 189, 119)',
-      fontSize: "2rem",
-      lineHeight: "1.3",
-      letterSpacing: "0",
     },
 });
 
@@ -69,7 +42,6 @@ export const StyledButton = styled.button({
   paddingLeft: '0.2rem',
   paddingRight: '0.2rem',
   '&:hover': {
-    //   background: 'lightGrey',
     border: '1px solid rgb(217, 189, 119)',
     borderRadius: '0.25rem',
 },
@@ -93,7 +65,6 @@ export const StyledButton = styled.button({
 });
 
 export const StyledSpacer = styled.div({
-  // cursor: `url(${MiddleFinger}), pointer`,
   display: 'inline-block',    
   fontFamily: '"Typewriter", sans-serif',
   fontStyle: "normal",
