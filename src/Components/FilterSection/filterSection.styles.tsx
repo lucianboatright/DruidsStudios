@@ -52,10 +52,10 @@ export const StyledTitle = styled.nav({
 
 
 export const StyledButton = styled.button({
-      border: '1px solid transparent',
-        borderRadius: '0.25rem',   
-    all: 'unset', 
-    cursor: 'pointer',
+  border: '1px solid transparent',
+  borderRadius: '0.25rem',   
+  all: 'unset', 
+  cursor: 'pointer',
   textDecoration: 'none',
   display: 'inline-block',    
   fontFamily: '"Typewriter", sans-serif',

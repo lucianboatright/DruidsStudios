@@ -1,9 +1,10 @@
 import MainImage from '../../assets/images/testworkshop.jpg'
-import { StyledMainImage } from './Home.styles';
+import { StyledMainImage, StyledTextBody } from './Home.styles';
 import LogoGrid from '../../Components/LogoGrid/LogoGrid';
 import WhatWeDo from '../../Components/SkillSection/SkillSection';
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
+import Footer from '../../Components/Footer/Footer';
 
 const logos = [
   { src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg', alt: 'Apple' },
@@ -48,13 +49,15 @@ export default function Home() {
           links={[
             { to: '/builds', label: 'Builds' },
             { to: '/hire', label: 'Hire' },
-            { to: '/contact', label: 'Contact' },
             { to: '/about', label: 'About' },
+            { to: '/contact', label: 'Contact' },
           ]}
         />
+        <StyledTextBody>What We Do: London Based set builder, We both build and hire out products. For Hiring view out list of products from flats, plinths, doors etc.  For built projects feel free to view and reach out. </StyledTextBody>
 
         <LogoGrid logos={logos} />
         <WhatWeDo skills={skills} />
+        <Footer />
     </>
   )
 }

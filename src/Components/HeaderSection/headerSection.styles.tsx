@@ -10,8 +10,8 @@ export const StyledIcons = styled.nav({
   width: '100%',
   display: 'grid',
   gridTemplateColumns: '1fr 4fr 1fr',
-//   alignItems: 'center',
-});
+//  borderBottom: '1px solid rgb(217, 189, 119)',
+ });
 
 export const StyledImage = styled.img({
   maxHeight: '8rem',
@@ -33,7 +33,7 @@ width: '100%',
 img: {
     all: 'unset',
     width: '100%',
-      height: '10rem',
+      height: '8rem',
     // height: '100px',
     //   minHeight: '100px',
       display: 'block',

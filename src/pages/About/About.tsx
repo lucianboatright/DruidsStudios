@@ -1,10 +1,11 @@
-import { Grid, StyledGrid, StyledTitle } from './About.styles';
+import { Grid, StyledGrid, StyledTextBody, StyledTitle } from './About.styles';
 import TeamCard from '../../Components/TeamCard/teamCard';
 import WhatWeDo from '../../Components/SkillSection/SkillSection';
 import ElenaImage from '../../assets/profilePics/Elena_omura.png'
 import MithilaImage from '../../assets/profilePics/Mithila_joshi.png'
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
+import Footer from '../../Components/Footer/Footer';
 
 const team = [
     {
@@ -22,7 +23,7 @@ const team = [
 
 const skills = [
   'Carpentry',
-  'Scenic Painting',
+  'Background Painting',
   'Prop Making',
   'Poly Sculpting',
   'Spray Finishing',
@@ -32,10 +33,10 @@ const skills = [
   'Plastering',
   'Metal Work',
   'CNC Machining',
-  'International Work',
+  'Instillation',
   'Location Work and Standby',
-  'Storage',
-  'Your Project!',
+  'Storage Boxes',
+  'Open to collaberation',
 ];
 
 
@@ -47,8 +48,8 @@ export default function Contact() {
                   links={[
                     { to: '/builds', label: 'Builds' },
                     { to: '/hire', label: 'Hire' },
-                    { to: '/contact', label: 'Contact' },
                     { to: '/about', label: 'About' },
+                    { to: '/contact', label: 'Contact' },
                   ]}
                 />
     <StyledGrid>
@@ -58,8 +59,10 @@ export default function Contact() {
           ))}
         </Grid>
     </StyledGrid>
-      <StyledTitle>London based Set Designer</StyledTitle>
+      {/* <StyledTitle>London based Set Designer</StyledTitle> */}
+      <StyledTextBody>What We Do: London Based set builder, We both build and hire out products. For Hiring view out list of products from flats, plinths, doors etc.  For built projects feel free to view and reach out. </StyledTextBody>
        <WhatWeDo skills={skills} />
+       <Footer />
     </>
   )
     

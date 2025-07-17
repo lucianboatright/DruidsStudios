@@ -8,6 +8,7 @@ import ImageGrid from '../../Components/ImageContainer/ImageContainer';
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
 import { FilterSection } from '../../Components/FilterSection/filterSection';
+import Footer from '../../Components/Footer/Footer';
 
 
 const items = [
@@ -32,11 +33,11 @@ export default function Builds() {
                   links={[
                     { to: '/', label: 'Home' },
                     { to: '/hire', label: 'Hire' },
-                    { to: '/contact', label: 'Contact' },
                     { to: '/about', label: 'About' },
+                    { to: '/contact', label: 'Contact' },
                   ]}
                 />
-                <StyledTitle>Built Projects</StyledTitle>
+                <StyledTitle>Portfolio of Built Projects</StyledTitle>
         
                 <FilterSection   filters={[
                     { label: 'Shop', value: 'Shop' },
@@ -49,6 +50,7 @@ export default function Builds() {
                 />
  
       <ProductComponent items={filteredSections}   />
+      <Footer />
     </>
   );
 }

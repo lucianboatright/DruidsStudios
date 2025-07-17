@@ -8,7 +8,7 @@ type Item = {
   details?: string;
   dimensions?: string;
   cost?: string;
-  content?: React.ReactElement;
+  content?: any;
 };
 
 type ProductComponentProps = {
@@ -22,11 +22,8 @@ export default function ProductComponent({ items }: ProductComponentProps) {
   return (
     <>
       <div>
-        {items.map(item => {
-          let hasdetails = item.dimensions
-          console.log('hasdetails', hasdetails)
-          return (
-          <StyledCard key={item.id} hasdetails={hasdetails}>
+        {items.map(item => (
+          <StyledCard key={item.id}>
             <StyledTitle >{item.company}</StyledTitle>
             <StyledDetails >{item.details}</StyledDetails>
             {item.dimensions &&
@@ -35,9 +32,9 @@ export default function ProductComponent({ items }: ProductComponentProps) {
               <StyledCost >Cost: {item.cost}</StyledCost>
             </>
             }
-            <StyledContent>{item.content}</StyledContent>
+            <StyledContent >{item.content}</StyledContent>
           </StyledCard>
-        )})}
+        ))}
       </div>
     </>
   );

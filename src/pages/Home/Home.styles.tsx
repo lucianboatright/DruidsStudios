@@ -12,3 +12,11 @@ export const StyledMainImage = styled.div({
     marginTop: '5rem',
   },
 });
+
+export const StyledTextBody = styled.div({
+      margin: '2% 5%',
+      "@media (min-width: 765px)": {
+          fontSize: '3rem',
+          margin: '5% 15%',
+      },
+});

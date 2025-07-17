@@ -1,10 +1,16 @@
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header({
+    marginLeft: '5%',
+    marginRight: '5%',
+    marginTop: '4rem',
+    marginBottom: '4rem',
+  
+            "@media (max-width: 765px)": {
+                marginTop: '1rem',
+                marginBottom: '1rem',
+            },
 
-    marginTop: '1rem',
-    marginBottom: '1rem',
-    
     nav: {
         display: 'flex',
         justifyContent: 'space-between',
@@ -26,7 +32,6 @@ export const StyledHeader = styled.header({
             },
             "@media (max-width: 765px)": {
                 fontSize: '1.5rem',
-                border: '1px solid rgb(217, 189, 119)',
                 padding: '0px 10px',
                 borderRadius: '0.25rem',
                 // textDecoration: 'underline',

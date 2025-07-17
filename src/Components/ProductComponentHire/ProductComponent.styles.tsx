@@ -13,11 +13,10 @@ export const StyledIcons = styled.nav({
 });
 
 
-export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
+export const StyledCard = styled.div({
   display: 'grid',
   gridTemplateColumns: '5rem auto auto',
-  // gridTemplateAreas: props.contentLength ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
-  gridTemplateAreas: props.hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
+  gridTemplateAreas: `"section1 section2 section3" "section4 section4 section4"`,
   margin: '3rem 5%',
   paddingTop: '3rem',
   borderTop: '1px solid rgb(217, 189, 119)',
@@ -33,7 +32,7 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
       "section4"
     `,
   },
-}));
+});
 
   export const StyledTitle = styled.section({
     fontSize: '2rem',

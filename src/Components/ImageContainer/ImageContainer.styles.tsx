@@ -13,8 +13,8 @@ export const Grid = styled.div({
     },
 });
 
-export const Image = styled.img( {
-    maxWidth: '40%',
+export const Image = styled.img<{ greaterthanthree?: boolean}>(props => ( {
+    maxWidth: props.greaterthanthree ? '32%' : '50%',
     marginRight: '0.5rem',
     height: 'auto',
     borderRadius: '8px',
@@ -24,4 +24,4 @@ export const Image = styled.img( {
 
 
     },
-});
+}));
