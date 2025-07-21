@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionWrapper, Title, SkillsGrid, SkillItem } from './SkillSection.styles';
+import { SectionWrapper, StyledTitle, SkillsGrid, SkillItem } from './SkillSection.styles';
 
 type WhatWeDoProps = {
   skills: string[];
@@ -15,9 +15,9 @@ const WhatWeDo: React.FC<WhatWeDoProps> = ({ skills, columns = 3 }) => {
 
   return (
     <SectionWrapper>
-      <Title>
-        <span>.</span>Profesional Trades<span>.</span>
-      </Title>
+      <StyledTitle>
+        <span>.</span>Set Design Expertise and Trades<span>.</span>
+      </StyledTitle>
       <SkillsGrid columns={columns}>
         {columnsArray.map((colSkills, i) => (
           <ul key={i}>

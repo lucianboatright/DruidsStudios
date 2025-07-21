@@ -15,6 +15,8 @@ export const StyledBox = styled.nav({
     // width: '40rem',
     border: '1px solid',
     padding: '1rem 2rem',
+         borderRadius: '4px',
+
     "@media (min-width: 765px)": {
         width: 'fit-content',
     },

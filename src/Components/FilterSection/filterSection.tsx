@@ -19,11 +19,11 @@ export function FilterSection({ filters, setActiveFilter }: FilterSectionProps) 
           {filters.map((filter, index) => (
             <React.Fragment key={filter.value}>
               {index < filters.length - 1 && 
-              <li>
+              <div>
                 <StyledButton onClick={() => setActiveFilter(filter.value)}>
                   {filter.label}
                 </StyledButton>
-              </li>
+              </div>
                 }
               {/* {index < filters.length - 1 && <StyledSpacer>-</StyledSpacer>} */}
             </React.Fragment>

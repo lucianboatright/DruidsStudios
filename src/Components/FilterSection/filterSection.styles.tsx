@@ -10,9 +10,29 @@ export const StyledTitle = styled.nav({
 export const StyledList = styled.nav({
   marginTop: '1rem',
     display: 'flex',
+    flexWrap: 'wrap',
     marginLeft: 'auto',
     marginRight: 'auto',
       justifyContent: 'space-between',
+        listStyle: 'none',
+        // 'button::before': {
+        //   content: '"•"',
+        //   // position: 'absolute',
+        //   left: 0,
+        //   top: '5rem',
+        //   transform: 'translateY(-50%)',
+        //   fontSize: '3rem',
+        //   marginRight: '1rem',
+
+        //   // color: 'black',
+        // },
+    //   li: {
+    //     marginTop: '0.5rem',
+    // //   "@media (min-width: 1000px)": {
+    // //     marginTop: '0rem'
+    // // },
+    //     // listStyle: 'none',
+    //   },
 });
 
 
@@ -33,11 +53,13 @@ export const StyledButton = styled.button({
   marginRight: '10px',
   paddingLeft: '0.2rem',
   paddingRight: '0.2rem',
+  
   '&:hover': {
     border: '1px solid rgb(217, 189, 119)',
     borderRadius: '0.25rem',
-},
-'&:focus': {
+    // fontSize: '7rem',
+    },
+    '&:focus': {
     borderRadius: '0.25rem',
     border: '1px solid rgb(217, 189, 119)',
         backgroundColor: 'rgb(217, 189, 119)',

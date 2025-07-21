@@ -25,19 +25,26 @@ import styled from 'styled-components';
 
 export const StyledIcons = styled.nav<{ greaterthanthree?: boolean}>(props => ({
   display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  width: '100%',
+  justifyContent: 'center',
+//   alignItems: 'center',
+  overflow: 'hidden',
+  maxWidth: '100%',
+//   height: '30rem',
+//   minHeight: '30rem',
 
     "@media (max-width: 1000px)": {
         display: 'block',
+        overflow: 'visible',
+        height: 'auto',
     },
 
   img: {
     borderRadius: '8px',
     marginBottom: '1rem',
-    height: 'auto',
-    maxWidth: '100%',
+    height: '100%',
+    width: '100%',
+    objectFit: 'contain',
+    // maxWidth: '100%',
     cursor: 'pointer',
     transition: 'transform 0.2s ease-in-out',
     "@media (min-width: 1000px)": {

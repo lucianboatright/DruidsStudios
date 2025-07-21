@@ -8,15 +8,33 @@ export const StyledMainImage = styled.div({
     maxWidth: '100%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginBottom: '5rem',
-    marginTop: '5rem',
+    marginBottom: '2rem',
+    marginTop: '2rem',
+    "@media (min-width: 600px)": {
+    marginBottom: '4rem',
+    marginTop: '4rem',
+    },
   },
 });
 
 export const StyledTextBody = styled.div({
       margin: '2% 5%',
       "@media (min-width: 765px)": {
-          fontSize: '3rem',
-          margin: '5% 15%',
+          fontSize: '1.5rem',
+          margin: '2.5% 10%',
+      },
+});
+
+export const StyledNavMobile = styled.div({
+  display: 'visible',
+      "@media (min-width: 765px)": {
+          display: 'none'
+      },
+});
+
+export const StyledNavDesktop = styled.div({
+          display: 'none',
+      "@media (min-width: 765px)": {
+      display: 'contents',
       },
 });

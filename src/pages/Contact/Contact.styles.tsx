@@ -12,6 +12,18 @@ export const StyledContactText = styled.nav({
 });
 
 export const StyledContainer = styled.nav({
-  marginLeft: '10%',
-  height: '100vh'  
+  marginLeft: '5%',
+  paddingRight: '1rem',
+  height: '100vh',
+  width: '50%',
+  "@media (max-width: 1000px)": {
+    height: 'auto'
+  },
+});
+
+export const ContactContainer = styled.nav({
+display: 'flex',
+    "@media (max-width: 1000px)": {
+      display: 'block',
+    },
 });

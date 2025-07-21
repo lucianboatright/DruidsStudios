@@ -42,15 +42,22 @@ export const Title = styled.h2({
   marginBottom: '8rem',
 });
 
+export const TextContainer = styled.div({
+  martinTop: '2rem',
+  display: 'grid',
+});
+
 export const Grid = styled.div({
-        display: 'flex',
+        display: 'block',
         maxWidth: '80rem',
-          marginLeft: 'auto',
+          marginLeft: '10%',
         marginRight: 'auto',
   "@media (min-width: 1000px)": {
-        marginTop: '10rem',
-        marginBottom: '10rem',
+        marginTop: '5rem',
+        marginBottom: '0rem',
           display: 'flex',
+          marginLeft: 'auto',
+          marginRight: 'auto',
           justifyContent: 'space-evenly',
         
     },
@@ -61,11 +68,11 @@ export const StyledGrid = styled.nav({
         marginRight: 'auto',
 });
 
-export const StyledTextBody = styled.div({
+export const StyledTextBody = styled.span({
+  all: 'unset',
       margin: '2% 5%',
       "@media (min-width: 765px)": {
-          fontSize: '3rem',
-          margin: '5% 15%',
+          fontSize: '1.5rem',
+          margin: '2% 5%',
       },
 });
-

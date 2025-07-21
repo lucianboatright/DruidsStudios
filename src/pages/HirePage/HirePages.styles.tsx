@@ -17,22 +17,24 @@ export const StyledBox = styled.nav({
     // width: '40rem',
     border: '1px solid',
     padding: '1rem 2rem',
+     borderRadius: '4px',
     "@media (min-width: 765px)": {
         width: 'fit-content',
     },
 });
 
 
-export const StyledFilterArea = styled.div({
-  display: 'flex',
-  justifyContent: 'none',
+// export const StyledFilterArea = styled.div({
+//     borderRadius: '8px',
+//   display: 'flex',
+//   justifyContent: 'none',
   
-  marginBottom: '1rem',
-  marginTop: '1rem',
-  "@media (min-width: 1000px)": {
-    justifyContent: 'center',
-    },
-});
+//   marginBottom: '1rem',
+//   marginTop: '1rem',
+//   "@media (min-width: 1000px)": {
+//     justifyContent: 'center',
+//     },
+// });
 
 
 export const StyledText = styled.div({

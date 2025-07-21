@@ -9,7 +9,7 @@ import { FilterSection } from '../../Components/FilterSection/filterSection';
 import Footer from '../../Components/Footer/Footer';
 
 // IMAGES
-import ArthurImage1 from '../../assets/images/JamesArthur/JamesArthur1.png'
+import ArthurImage1 from '../../assets/images/JamesArthur/JamesArthur01.jpg'
 import ArthurImage2 from '../../assets/images/JamesArthur/JamesArthur3.jpg'
 
 import Vashi1 from '../../assets/images/Vashi/1.png'

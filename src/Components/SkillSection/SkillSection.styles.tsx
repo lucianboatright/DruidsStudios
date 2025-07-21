@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section({
   textAlign: 'center',
 });
 
-export const Title = styled.h2({
+export const StyledTitle = styled.h1({
   fontSize: '2.5rem',
   marginBottom: '3rem',
   fontWeight: '700',

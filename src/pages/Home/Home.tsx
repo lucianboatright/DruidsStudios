@@ -1,5 +1,5 @@
 import MainImage from '../../assets/images/testworkshop.jpg'
-import { StyledMainImage, StyledTextBody } from './Home.styles';
+import { StyledMainImage, StyledNavDesktop, StyledNavMobile, StyledTextBody } from './Home.styles';
 import LogoGrid from '../../Components/LogoGrid/LogoGrid';
 import WhatWeDo from '../../Components/SkillSection/SkillSection';
 import HeaderSection from '../../Components/HeaderSection/headerSection';
@@ -42,20 +42,34 @@ export default function Home() {
   return (
     <>
        <HeaderSection />
+       <StyledNavMobile>
+          <NarBar
+            links={[
+              { to: '/builds', label: 'Builds' },
+              { to: '/hire', label: 'Hire' },
+              { to: '/about', label: 'About' },
+              { to: '/contact', label: 'Contact' },
+            ]}
+          />
+       </StyledNavMobile>
         <StyledMainImage>
           <img src={MainImage} alt='Lgog' />
         </StyledMainImage>
-        <NarBar
-          links={[
-            { to: '/builds', label: 'Builds' },
-            { to: '/hire', label: 'Hire' },
-            { to: '/about', label: 'About' },
-            { to: '/contact', label: 'Contact' },
-          ]}
-        />
-        <StyledTextBody>What We Do: London Based set builder, We both build and hire out products. For Hiring view out list of products from flats, plinths, doors etc.  For built projects feel free to view and reach out. </StyledTextBody>
+        <StyledNavDesktop>
+          <NarBar
+            links={[
+              { to: '/builds', label: 'Builds' },
+              { to: '/hire', label: 'Hire' },
+              { to: '/about', label: 'About' },
+              { to: '/contact', label: 'Contact' },
+            ]}
+          />
+        </StyledNavDesktop>
 
         <LogoGrid logos={logos} />
+          <StyledTextBody>At our London-based workshop, Oscar and Charlie lead a highly skilled team specialising in professional set construction, scenic carpentry, prop making, and custom fabrication for film, television, theatre, and commercial installations.</StyledTextBody>
+          <StyledTextBody>We offer end-to-end design and build services — from CNC routing, welding, and woodworking to scenic painting, set dressing, and on-site installation. Whether working on large-scale productions or bespoke commissions, we bring precision, creativity, and decades of hands-on experience to every project.</StyledTextBody>
+          <StyledTextBody>Our workshop combines traditional craftsmanship with modern techniques, delivering reliable and visually striking results for clients across the UK’s creative industries.</StyledTextBody>
         <WhatWeDo skills={skills} />
         <Footer />
     </>
