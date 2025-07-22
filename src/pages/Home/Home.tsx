@@ -20,21 +20,21 @@ const logos = [
 ];
 
 const skills = [
-  'Carpentry',
-  'Scenic Painting',
-  'Prop Making',
-  'Poly Sculpting',
-  'Spray Finishing',
-  'Project Management',
-  'Design',
-  'CAD Drawing and visualisation',
-  'Plastering',
-  'Metal Work',
-  'CNC Machining',
-  'International Work',
-  'Location Work and Standby',
-  'Storage',
-  'Your Project!',
+  "Carpentry",
+  "Scenic Painting",
+  "Prop Making",
+  "Poly Sculpting",
+  "Spray Finishing",
+  "Project Management",
+  "Design",
+  "CAD Drawing and visualisation",
+  "Plastering",
+  "Metal Work",
+  "CNC Machining",
+  "International Work",
+  "Location Work and Standby",
+  "Storage",
+  "Your Project!"
 ];
 
 

@@ -39,6 +39,16 @@ import YoungFka3 from '../../assets/images/YoungFka/image3.jpg'
 import Versace1 from '../../assets/images/Versace/versace1.jpeg'
 import Versace2 from '../../assets/images/Versace/versace2.jpeg'
 
+import Gshock1 from '../../assets/images/Gshock/g-shock-central-cee.avif'
+import Gshock2 from '../../assets/images/Gshock/gshock-cree-2.jpg'
+
+import Xbox1 from '../../assets/images/Xbox/gameImage.jpg'
+import Xbox2 from '../../assets/images/Xbox/gameimage02.jpg'
+
+import Lamp1 from '../../assets/images/Storhouse/Screenshot 2025-07-22 at 11.44.04.png'
+import Lamp2 from '../../assets/images/Storhouse/lampImage1.webp'
+import Lamp3 from '../../assets/images/Storhouse/lampImage2.jpg'
+
   // { id: 1, 
   //   category: "Shop", 
   //   company: 'Apple', 
@@ -99,6 +109,24 @@ const items = [
     company: 'Versace', 
     details: 'A full tiled bathroom, built in a backroom inside a boxing club. Very late finish and memorable derig on this one…. For a short film by versace.', 
     content: <ImageGrid images={[Versace1, Versace2]} /> 
+  },
+  { id: 10, 
+    category: "Set", 
+    company: 'G-Shock', 
+    details: 'For G-SHOCK’s campaign introducing Central Cee as their new ambassador, we built a sleek, metallic city office set that captured the brand’s urban resilience and edge. The environment featured sharp lines, reflective surfaces, and industrial textures — creating a futuristic workspace that echoed both Central Cee’s London roots and G-SHOCK’s bold identity.', 
+    content: <ImageGrid images={[Gshock1, Gshock2]} /> 
+  },
+  { id: 11, 
+    category: "Set", 
+    company: 'X-Box', 
+    details: 'For the launch of Xbox’s Avowed, we built a full-scale, fungi-covered installation known as the ‘Bloomboard’ — a haunting physical recreation of an infected character from the game. Real oyster, Lion’s Mane, and Pioppini mushrooms were grown on the sculpture, transforming visibly over time to illustrate the spread of the Dreamscourge — a magical plague central to the game’s story.', 
+    content: <ImageGrid images={[Xbox1, Xbox2]} /> 
+  },
+  { id: 12, 
+    category: "Set", 
+    company: 'StoreHouse', 
+    details: 'We designed and hand-built 150 bespoke lamps for the Storehouse Theatre, using paper wrapped around custom metal frames. Each piece was crafted to create a warm, atmospheric glow while complementing the space’s architectural character.', 
+    content: <ImageGrid images={[Lamp1, Lamp2, Lamp3]} /> 
   },
   
   // Add more as needed

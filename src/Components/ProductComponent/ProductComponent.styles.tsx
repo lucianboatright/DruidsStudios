@@ -16,20 +16,17 @@ export const StyledIcons = styled.nav({
 export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   display: 'grid',
   gridTemplateColumns: '8rem auto auto',
-  // gridTemplateAreas: props.contentLength ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
   gridTemplateAreas: props.hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
   marginLeft: '5%',
   marginRight: '5%',
   paddingTop: '4rem',
   paddingBottom: '3rem',
-  // paddingBottom: '1rem',
-  // borderBottom: '1px solid rgb(217, 189, 119)',
-  borderTop: '1px solid rgb(217, 189, 119)',
-
   gap: '1rem',
-    // margin: '10px 10px 10px 10px',
 
+    borderTop: '1px solid rgb(217, 189, 119)',
   '@media (max-width: 1000px)': {
+    borderTop: 'none',
+    borderBottom: '1px solid rgb(217, 189, 119)',
     margin: '10px 10px 10px 10px',
     paddingBottom: '1rem',
     paddingTop : '1rem',
