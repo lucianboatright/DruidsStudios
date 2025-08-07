@@ -3,7 +3,7 @@ import image1 from '../../assets/images/20240928_171850.jpg'
 import image2 from '../../assets/images/20240929_094632.jpg'
 import { useState } from 'react';
 import ImageGrid from '../../Components/ImageContainer/ImageContainer';
-import { StyledBox, StyledTitle } from './HirePages.styles';
+import { StyledBox } from './HirePages.styles';
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
 import { FilterSection } from '../../Components/FilterSection/filterSection';
