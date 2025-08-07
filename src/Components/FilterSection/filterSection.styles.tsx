@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-
-
 export const StyledTitle = styled.nav({
     fontSize: '4rem',
     textAlign: 'center',
@@ -15,29 +13,11 @@ export const StyledList = styled.nav({
     marginRight: 'auto',
       justifyContent: 'space-between',
         listStyle: 'none',
-        // 'button::before': {
-        //   content: '"•"',
-        //   // position: 'absolute',
-        //   left: 0,
-        //   top: '5rem',
-        //   transform: 'translateY(-50%)',
-        //   fontSize: '3rem',
-        //   marginRight: '1rem',
-
-        //   // color: 'black',
-        // },
-    //   li: {
-    //     marginTop: '0.5rem',
-    // //   "@media (min-width: 1000px)": {
-    // //     marginTop: '0rem'
-    // // },
-    //     // listStyle: 'none',
-    //   },
 });
 
 
 export const StyledButton = styled.button({
-  border: '1px solid transparent',
+  // border: '1px solid transparent',
   borderRadius: '0.25rem',   
   all: 'unset', 
   cursor: 'pointer',
@@ -53,18 +33,28 @@ export const StyledButton = styled.button({
   marginRight: '10px',
   paddingLeft: '0.2rem',
   paddingRight: '0.2rem',
-  
-  '&:hover': {
-    border: '1px solid rgb(217, 189, 119)',
-    borderRadius: '0.25rem',
-    // fontSize: '7rem',
-    },
-    '&:focus': {
-    borderRadius: '0.25rem',
-    border: '1px solid rgb(217, 189, 119)',
-        backgroundColor: 'rgb(217, 189, 119)',
-        color: 'rgb(31, 50, 37)'
-    },
+  borderRight: '1px solid rgb(217, 189, 119)',
+    "&:last-child": {
+    borderRight: 'none',
+  },
+
+  "&::before": {
+    content: "''",
+    display: "inline-block",
+    width: "20px",
+    height: "20px",
+    // border: "2px solid #333",
+    borderRadius: "4px",
+    background: "#fff",
+    transition: "background 0.2s, border-color 0.2s",
+    marginRight: "1rem",
+  },
+
+  "&:focus::before, &:focus-visible::before": {
+    background: "rgb(217, 189, 119)",
+    borderColor: "rgb(217, 189, 119)",
+  },
+
     "@media (min-width: 1000px)": {
         paddingLeft: '1rem',
         paddingRight: '1rem',

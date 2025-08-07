@@ -37,7 +37,7 @@ export default function Hire() {
                   ]}
                 />
                 <StyledBox>
-                  <StyledTitle>Filter For Hire:</StyledTitle>
+                  {/* <StyledTitle>Filter For Hire:</StyledTitle> */}
                     <FilterSection   filters={[
                         { label: 'Shop', value: 'Shop' },
                         { label: 'Theater', value: 'Theater' },

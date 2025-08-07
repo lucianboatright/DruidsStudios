@@ -150,7 +150,7 @@ export default function Builds() {
                   ]}
                 />
                 <StyledBox>
-                  <StyledTitle>Filter By Projects:</StyledTitle>
+                  {/* <StyledTitle>Filter By Projects:</StyledTitle> */}
           
                   <FilterSection   filters={[
                       { label: 'Shop', value: 'Shop' },

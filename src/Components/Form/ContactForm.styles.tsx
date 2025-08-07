@@ -7,9 +7,10 @@ export const Form = styled.form({
   margin: '2rem auto',
   gap: '1rem',
   padding: '1.5rem',
-  border: '1px solid #ccc',
-  borderRadius: '8px',
+  borderLeft: '1px solid rgb(217, 189, 119)',
+  // borderRadius: '8px',
   marginRight: '2rem',
+  height: 'fit-content',
       "@media (max-width: 1000px)": {
           maxWidth: '90%',
     },
@@ -37,14 +38,14 @@ export const Textarea = styled.textarea({
 export const Button = styled.button({
   padding: '0.75rem',
   fontSize: '1rem',
-  backgroundColor: '#0070f3',
+  backgroundColor: 'rgb(217, 189, 119)',
   color: 'white',
   border: 'none',
   borderRadius: '4px',
   cursor: 'pointer',
   transition: 'background 0.3s',
   ':hover': {
-    backgroundColor: '#0059c1',
+    backgroundColor: 'rgb(217, 189, 119)',
   },
 });
 

@@ -15,7 +15,7 @@ export const StyledBox = styled.nav({
     marginRight: 'auto',
     marginBottom: '2rem',
     // width: '40rem',
-    border: '1px solid',
+    // border: '1px solid',
     padding: '1rem 2rem',
      borderRadius: '4px',
     "@media (min-width: 765px)": {
