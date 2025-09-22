@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import { StyledCard, StyledTitle, StyledDetails, StyledContent, StyledDimensions, StyledCost } from './ProductComponent.styles';
+import { StyledCard, StyledTitle, StyledDetails, StyledDimensions, StyledCost } from './ProductComponent.styles';
 
 
 type Item = {

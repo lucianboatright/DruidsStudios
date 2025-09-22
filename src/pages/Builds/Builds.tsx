@@ -2,7 +2,6 @@
 import ProductComponent from '../../Components/ProductComponent/ProductComponent';
 import { StyledBox } from './Builds.styles';
 import { useState } from 'react';
-import ImageGrid from '../../Components/ImageContainer/ImageContainer';
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
 import { FilterSection } from '../../Components/FilterSection/filterSection';
