@@ -28,7 +28,7 @@ export const StyledIcons = styled.nav<{ greaterthanthree?: boolean}>(props => ({
   justifyContent: 'center',
 //   alignItems: 'center',
   overflow: 'hidden',
-  maxWidth: '100%',
+  maxWidth: '500px',
 //   height: '30rem',
 //   minHeight: '30rem',
 

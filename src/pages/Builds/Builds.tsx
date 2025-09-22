@@ -60,73 +60,73 @@ const items = [
     category: "Music", 
     company: 'James Arthur', 
     details: 'Super last minute turnaround on this one. Making one room of a community centre in hoxton, into a clinical isolated box for james arthur on this music video, crazy tight load in and really clever rigging and lighting set up on this job!', 
-    content: <ImageGrid images={[ArthurImage1, ArthurImage2]} /> 
+    content: [ArthurImage1, ArthurImage2]
   },
   { id: 2, 
     category: "Shop", 
     company: 'Vashi', 
     details: 'This was a fun job for the amazing jewelry brand vashi. We created the large rings and also created other props and objects for multiple set ups throughout the shoot.', 
-    content: <ImageGrid images={[Vashi1, Vashi2, Vashi3]} /> 
+    content: [Vashi1, Vashi2, Vashi3]
   },
   { id: 3, 
     category: "Music", 
     company: 'FKA Twigs & Centeral Cee', 
     details: 'This job mainly consisted of building the large steps in the video and incorporating the rotating platform, then helping the art team with getting everything set up.', 
-    content: <ImageGrid images={[FkaCee1, FkaCee2]} /> 
+    content: [FkaCee1, FkaCee2]
   },
   { id: 4, 
     category: "Music", 
     company: 'Tion Wayne', 
     details: 'For this job we were presented with a rented set that we had to try and piece together, it was very well used and was falling apart in places. We had to brace and strengthen, restain and completely replace some missing pieces to get it to a useable place. And then we moved onto making a huge stack of cash (for the video sadly)', 
-    content: <ImageGrid images={[TionWayne1, TionWayne2]} /> 
+    content: [TionWayne1, TionWayne2]
   },
   { id: 5, 
     category: "Music", 
     company: 'Zilch', 
     details: 'This wasnt an easy one at all! But with  A few long nights, lots of filler bendy ply and some serious swearing we got the job done. We were very happy to see the back of this stupid ufo thing ?!?!', 
-    content: <ImageGrid images={[Zilch1, Zilch2]} /> 
+    content: [Zilch1, Zilch2]
   },
   { id: 6, 
     category: "Music", 
     company: 'Metronomy', 
     details: 'First of Two great fun builds here for metronomy, one the simple plane interior with some wicked camera tricks and great cotton wool clouds plus some incredible skydiving antics from the band members all doing there own stunts', 
-    content: <ImageGrid images={[Metromony1, Metromony2, Metromony3]} /> 
+    content: [Metromony1, Metromony2, Metromony3]
   },
   { id: 7, 
     category: "Music", 
     company: 'Metronomy', 
     details: 'The second of of Two great fun builds here for metronomy, video was just four rooms with very different aesthetics all set up and cleverly stacked a nd organised in post to look as it dies in the finished product.', 
-    content: <ImageGrid images={[Metromony5, Metromony6]} /> 
+    content: [Metromony5, Metromony6]
   },
   { id: 8, 
     category: "Music", 
     company: 'Yung Lean & FKA Twigs', 
     details: 'Another really fun job this one, making these great fully operational chandeliers to mount on this great old classic car, a great video and a great song to top it off', 
-    content: <ImageGrid images={[YoungFka1, YoungFka2, YoungFka3]} /> 
+    content: [YoungFka1, YoungFka2, YoungFka3]
   },
   { id: 9, 
     category: "Music", 
     company: 'Versace', 
     details: 'A full tiled bathroom, built in a backroom inside a boxing club. Very late finish and memorable derig on this one…. For a short film by versace.', 
-    content: <ImageGrid images={[Versace1, Versace2]} /> 
+    content: [Versace1, Versace2]
   },
   { id: 10, 
     category: "Set", 
     company: 'G-Shock', 
     details: 'For G-SHOCK’s campaign introducing Central Cee as their new ambassador, we built a sleek, metallic city office set that captured the brand’s urban resilience and edge. The environment featured sharp lines, reflective surfaces, and industrial textures — creating a futuristic workspace that echoed both Central Cee’s London roots and G-SHOCK’s bold identity.', 
-    content: <ImageGrid images={[Gshock1, Gshock2]} /> 
+    content: [Gshock1, Gshock2]
   },
   { id: 11, 
     category: "Set", 
     company: 'X-Box', 
     details: 'For the launch of Xbox’s Avowed, we built a full-scale, fungi-covered installation known as the ‘Bloomboard’ — a haunting physical recreation of an infected character from the game. Real oyster, Lion’s Mane, and Pioppini mushrooms were grown on the sculpture, transforming visibly over time to illustrate the spread of the Dreamscourge — a magical plague central to the game’s story.', 
-    content: <ImageGrid images={[Xbox1, Xbox2]} /> 
+    content: [Xbox1, Xbox2]
   },
   { id: 12, 
     category: "Set", 
     company: 'StoreHouse', 
     details: 'We designed and hand-built 150 bespoke lamps for the Storehouse Theatre, using paper wrapped around custom metal frames. Each piece was crafted to create a warm, atmospheric glow while complementing the space’s architectural character.', 
-    content: <ImageGrid images={[Lamp1, Lamp2, Lamp3]} /> 
+    content: [Lamp1, Lamp2, Lamp3]
   },
   
   // Add more as needed
@@ -142,8 +142,9 @@ export default function Builds() {
     <>
        <HeaderSection />
                 <NarBar
-                  links={[
+                   links={[
                     { to: '/', label: 'Home' },
+                    { to: '/builds', label: 'Builds' },
                     { to: '/hire', label: 'Hire' },
                     { to: '/about', label: 'About' },
                     { to: '/contact', label: 'Contact' },
@@ -155,9 +156,9 @@ export default function Builds() {
                   <FilterSection   filters={[
                       { label: 'Shop', value: 'Shop' },
                       { label: 'Theater', value: 'Theater' },
+                      { label: 'All', value: 'ALL' },
                       { label: 'Music Video', value: 'Music' },
                       { label: 'Adverts', value: 'Adverts' },
-                      { label: 'View All', value: 'ALL' },
                     ]}
                     setActiveFilter={setActiveFilter}
                   />

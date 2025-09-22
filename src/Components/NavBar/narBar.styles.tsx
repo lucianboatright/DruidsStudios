@@ -4,9 +4,13 @@ export const StyledHeader = styled.header({
     marginLeft: '5%',
     marginRight: '5%',
     marginTop: '4rem',
-    marginBottom: '4rem',
+    marginBottom: '2rem',
+    paddingBottom: '1.2rem',
+    paddingTop: '1.1rem',
+    borderBottom: '1px solid',
+    // borderTop: '1px solid',
   
-    "@media (max-width: 765px)": {
+    "@media (max-width: 1032px)": {
         marginLeft: '5%',
         marginRight: '5%',
         marginTop: '1rem',
@@ -29,11 +33,14 @@ export const StyledHeader = styled.header({
             textDecoration: 'none',
             // borderRadius: '0.5rem',
             '&:hover': {
-                textDecoration: 'underline',
-                transform: 'scale(1.05)',
+                // textDecoration: 'underline',
+                // borderBottom: '2px solid ',
+                // borderLeft: '2px solid ',
+                // borderRight: '2px solid ',
+                transform: 'scale(1.10)',
             },
-            "@media (max-width: 765px)": {
-                fontSize: '1.5rem',
+            "@media (max-width: 1032px)": {
+                fontSize: '1.1rem',
                 padding: '0px 5px',
                 borderRadius: '0.25rem',
                 // textDecoration: 'underline',

@@ -23,10 +23,10 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   paddingBottom: '3rem',
   gap: '1rem',
 
-    borderTop: '1px solid rgb(217, 189, 119)',
+    // borderTop: '1px solid rgb(217, 189, 119)',
+    borderBottom: '1px solid rgb(217, 189, 119)',
   '@media (max-width: 1000px)': {
     borderTop: 'none',
-    borderBottom: '1px solid rgb(217, 189, 119)',
     margin: '10px 10px 10px 10px',
     paddingBottom: '1rem',
     paddingTop : '1rem',
@@ -96,4 +96,32 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
     "@media (max-width: 1000px)": {
         marginLeft: '0rem',
       },
+});
+
+//   export const StyledContent = styled.div({
+//     // gridArea: 'section4',
+//     // marginTop: '2rem',
+//     // marginLeft: '14rem',
+//     // alignSelf: 'flex-start',
+//     // display: 'flex',
+
+
+    
+//     // "@media (max-width: 1000px)": {
+//     //     marginLeft: '0rem',
+//     //   },
+// });
+
+  export const StyledImage = styled.div({
+  height: '300px',
+  width: '100%',        // fills parent container’s width
+  objectFit: 'cover',   // crops nicely
+  borderRadius: '8px',
+    // objectFit: 'cover',
+    // alignSelf: 'flex-start',
+
+    
+    // "@media (max-width: 1000px)": {
+    //     marginLeft: '0rem',
+    //   },
 });
