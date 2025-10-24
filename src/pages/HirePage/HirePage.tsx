@@ -31,7 +31,7 @@ export default function Hire() {
                         links={[
                           { to: '/', label: 'Home' },
                           { to: '/builds', label: 'Builds' },
-                          { to: '/hire', label: 'Hire' },
+                          // { to: '/hire', label: 'Hire' },
                           { to: '/about', label: 'About' },
                           { to: '/contact', label: 'Contact' },
                         ]}

@@ -15,12 +15,12 @@ export const StyledIcons = styled.nav({
 
 export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   display: 'grid',
-  gridTemplateColumns: '8rem auto auto',
-  gridTemplateAreas: props.hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "section4 section4"`,
+  gridTemplateColumns: '10rem auto auto',
+  gridTemplateAreas: props.hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "none section4"`,
   marginLeft: '5%',
   marginRight: '5%',
   paddingTop: '4rem',
-  paddingBottom: '3rem',
+  paddingBottom: '4rem',
   gap: '1rem',
 
     // borderTop: '1px solid rgb(217, 189, 119)',
@@ -124,4 +124,72 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
     // "@media (max-width: 1000px)": {
     //     marginLeft: '0rem',
     //   },
+});
+
+export const BottomRow = styled.div({
+  // gridColumn: "1 / -1",  
+  gridArea: 'section4',   
+  display: "flex",
+  gap: "2rem",
+  // alignItems: "flex-end",
+  marginTop: "2rem",
+  flexWrap: "wrap",
+  // overflowX: "auto",         
+  paddingBottom: "2px",
+  justifyContent: 'space-between',
+  marginLeft: '5rem',
+  // maxWidth: '50%',
+      "@media (max-width: 1000px)": {
+        marginLeft: '0rem',
+      },
+});
+
+export const RowImg = styled.img(() => ({
+  maxHeight: `200px`,           
+  width: "auto",              
+  display: "block",
+  borderRadius: "6px",
+  '@media (min-width: 691px) and (max-width: 1222px)': {
+    maxHeight: '250px',
+  },
+
+  '@media (max-width: 690px)': {
+    maxHeight: 'none',
+    width: '90%',
+  },
+
+}));
+
+export const LightboxOverlay = styled.div({
+  position: 'fixed',
+  inset: 0,
+  background: 'rgba(0,0,0,0.7)',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  zIndex: 9999,
+});
+
+export const LightboxImg = styled.img({
+  maxWidth: '92vw',
+  maxHeight: '92vh',
+  borderRadius: '10px',
+  boxShadow: '0 12px 48px rgba(0,0,0,0.5)',
+  display: 'block',
+});
+
+export const CloseBtn = styled.button({
+  position: 'fixed',
+  top: '16px',
+  right: '16px',
+  border: 'none',
+  background: 'rgba(0,0,0,0.55)',
+  color: '#fff',
+  borderRadius: '999px',
+  width: '40px',
+  height: '40px',
+  fontSize: '22px',
+  lineHeight: 1,
+  cursor: 'pointer',
+  zIndex: 10000,
 });

@@ -50,8 +50,9 @@ export default function Home() {
        <StyledNavMobile>
           <NarBar
             links={[
+              { to: '/', label: 'Home' },
               { to: '/builds', label: 'Builds' },
-              { to: '/hire', label: 'Hire' },
+              // { to: '/hire', label: 'Hire' },
               { to: '/about', label: 'About' },
               { to: '/contact', label: 'Contact' },
             ]}
@@ -63,8 +64,9 @@ export default function Home() {
         <StyledNavDesktop>
           <NarBar
             links={[
+              { to: '/', label: 'Home' },
               { to: '/builds', label: 'Builds' },
-              { to: '/hire', label: 'Hire' },
+              // { to: '/hire', label: 'Hire' },
               { to: '/about', label: 'About' },
               { to: '/contact', label: 'Contact' },
             ]}

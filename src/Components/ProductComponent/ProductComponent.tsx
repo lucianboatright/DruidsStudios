@@ -1,6 +1,9 @@
-
-import styled from 'styled-components';
-import { StyledCard, StyledTitle, StyledDetails, StyledDimensions, StyledCost } from './ProductComponent.styles';
+import { JSXElementConstructor, ReactElement, ReactNode, ReactPortal, Key, useEffect, useState } from 'react';
+import {
+  StyledCard, StyledTitle, StyledDetails, StyledDimensions, StyledCost,
+  BottomRow, RowImg,
+  LightboxOverlay, LightboxImg, CloseBtn,
+} from './ProductComponent.styles';
 
 
 type Item = {
@@ -17,67 +20,90 @@ type ProductComponentProps = {
 };
 
 
-const BottomRow = styled.div({
-  gridColumn: "1 / -1",     
-  display: "flex",
-  gap: "0.75rem",
-  alignItems: "flex-end",
-  marginTop: "2rem",
-  flexWrap: "wrap",
-  // overflowX: "auto",         
-  paddingBottom: "2px",
-  justifyContent: 'space-evenly',
-  // maxWidth: '50%',
-});
-
-const RowImg = styled.img(() => ({
-  maxHeight: `300px`,           
-  width: "auto",              
-  display: "block",
-  borderRadius: "6px",
-  '@media (min-width: 691px) and (max-width: 1222px)': {
-    maxHeight: '250px',
-  },
-
-  '@media (max-width: 690px)': {
-    maxHeight: 'none',
-    width: '90%',
-  },
-
-}));
-
-
 
 export default function ProductComponent({ items }: ProductComponentProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSrc, setActiveSrc] = useState<string | null>(null);
+  const [activeAlt, setActiveAlt] = useState<string>('image');
 
+  const open = (src: string, alt?: string) => {
+    setActiveSrc(src);
+    setActiveAlt(alt || 'image');
+    setIsOpen(true);
+  };
+  const close = () => {
+    setIsOpen(false);
+    setActiveSrc(null);
+  };
+
+  // (optional) ESC to close
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && close();
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isOpen]);
 
   return (
     <>
       <div>
-        {items.map(item => {
-          let hasdetails = item.dimensions
-          console.log('hasdetails', hasdetails)
+        {items.map((item: any) => {
+          const hasdetails = !!item.dimensions;
+
+          // normalize your item.content to [{src, alt}]
+          const images = Array.isArray(item.content)
+            ? item.content
+                .filter(Boolean)
+                .map((img: any) =>
+                  typeof img === 'string'
+                    ? { src: img, alt: `${item.company}` }
+                    : { src: img.src ?? img.url, alt: img.alt || `${item.company}` }
+                )
+                .filter((x: any) => !!x.src)
+                .slice(0, 3)
+            : [];
+
           return (
-          <StyledCard key={item.id} hasdetails={hasdetails}>
-            <StyledTitle >{item.company}</StyledTitle>
-            <StyledDetails >{item.details}</StyledDetails>
-            {item.dimensions &&
-            <>
-              <StyledDimensions >Dimensions: {item.dimensions}</StyledDimensions>
-              <StyledCost >Cost: {item.cost}</StyledCost>
-            </>
-            }
-     {/* {item.length > 0 && ( */}
-        <BottomRow>
-          {item.content.map((img: any, i: any) => (
-            <RowImg key={i} src={img} alt={img.alt || `${i + 1}`} />
-          ))}
-        </BottomRow>
-      {/* )} */}
-            {/* <StyledContent>{item.content}</StyledContent> */}
-          </StyledCard>
-        )})}
+            <StyledCard key={item.id} hasdetails={hasdetails}>
+              <StyledTitle>{item.company}</StyledTitle>
+              <StyledDetails>{item.details}</StyledDetails>
+              {item.dimensions && (
+                <>
+                  <StyledDimensions>Dimensions: {item.dimensions}</StyledDimensions>
+                  <StyledCost>Cost: {item.cost}</StyledCost>
+                </>
+              )}
+
+              {images.length > 0 && (
+                <BottomRow>
+                  {images.map((img: any, i: any) => (
+                    <RowImg
+                      key={i}
+                      src={img.src}
+                      alt={img.alt || `${item.company} ${i + 1}`}
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => open(img.src, img.alt)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') open(img.src, img.alt);
+                      }}
+                    />
+                  ))}
+                </BottomRow>
+              )}
+            </StyledCard>
+          );
+        })}
       </div>
+
+      {isOpen && activeSrc && (
+        <LightboxOverlay onClick={close} role="dialog" aria-modal="true">
+          <div onClick={(e) => e.stopPropagation()}>
+            <LightboxImg src={activeSrc} alt={activeAlt} />
+          </div>
+          <CloseBtn aria-label="Close" onClick={close}>×</CloseBtn>
+        </LightboxOverlay>
+      )}
     </>
   );
 }
