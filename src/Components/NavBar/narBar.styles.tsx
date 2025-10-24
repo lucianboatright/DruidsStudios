@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header({
-    marginLeft: '5%',
-    marginRight: '5%',
-    marginTop: '4rem',
-    marginBottom: '2rem',
+    // marginRight: '5%',
+    // marginLeft: '5%',
+    marginTop: '2rem',
+    // marginBottom: '2rem',
     paddingBottom: '1.2rem',
     paddingTop: '1.1rem',
     borderBottom: '1px solid',
+    borderTop: '1px solid',
+    paddingLeft: '5%',
+    paddingRight: '5%',
     // borderTop: '1px solid',
   
     "@media (max-width: 1032px)": {

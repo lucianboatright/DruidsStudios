@@ -24,7 +24,7 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   gap: '1rem',
 
     // borderTop: '1px solid rgb(217, 189, 119)',
-    borderBottom: '1px solid rgb(217, 189, 119)',
+  borderTop: '1px solid rgb(217, 189, 119)',
   '@media (max-width: 1000px)': {
     borderTop: 'none',
     margin: '10px 10px 10px 10px',

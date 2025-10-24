@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 import ProductComponent from '../../Components/ProductComponent/ProductComponent';
-import { StyledBox } from './Builds.styles';
+import { StyledBox, StyledTitle } from './Builds.styles';
 import { useState } from 'react';
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
@@ -150,7 +150,6 @@ export default function Builds() {
                   ]}
                 />
                 <StyledBox>
-                  {/* <StyledTitle>Filter By Projects:</StyledTitle> */}
           
                   <FilterSection   filters={[
                       { label: 'Shop', value: 'Shop' },

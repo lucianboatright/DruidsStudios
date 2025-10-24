@@ -4,7 +4,9 @@ export const StyledTitle = styled.nav({
     fontSize: '2rem',
     textAlign: 'center',
     "@media (min-width: 765px)": {
-      fontSize: '3rem',
+      fontSize: '2.5rem',
+      marginBottom: '1rem',
+      fontWeight: '500'
     },
 });
 
@@ -16,7 +18,7 @@ export const StyledBox = styled.nav({
     padding: '1rem 2rem',
          borderRadius: '4px',
 
-    "@media (min-width: 765px)": {
-    marginBottom: '2rem',
-    },
+    // "@media (min-width: 765px)": {
+    // marginBottom: '2rem',
+    // },
 });

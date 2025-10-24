@@ -11,6 +11,8 @@ export const FooterContainer = styled.footer({
   color: "rgb(217, 189, 119)",
   fontStyle: "normal",
   letterSpacing: "0em",
+  borderTop: '1px solid rgb(217, 189, 119)',
+  paddingTop: '1rem',
   "@media (min-width: 768px)": {
       display: "grid",
       gridTemplateColumns: "16% 30% 52%", 
