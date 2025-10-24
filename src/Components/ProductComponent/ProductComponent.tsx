@@ -1,4 +1,4 @@
-import { JSXElementConstructor, ReactElement, ReactNode, ReactPortal, Key, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   StyledCard, StyledTitle, StyledDetails, StyledDimensions, StyledCost,
   BottomRow, RowImg,
@@ -8,7 +8,7 @@ import {
 
 type Item = {
   id: number;
-  company: string;
+  company: any;
   details?: string;
   dimensions?: string;
   cost?: string;
@@ -56,8 +56,8 @@ export default function ProductComponent({ items }: ProductComponentProps) {
                 .filter(Boolean)
                 .map((img: any) =>
                   typeof img === 'string'
-                    ? { src: img, alt: `${item.company}` }
-                    : { src: img.src ?? img.url, alt: img.alt || `${item.company}` }
+                    ? { src: img, alt: item.company }
+                    : { src: img.src ?? img.url, alt: img.alt || item.company }
                 )
                 .filter((x: any) => !!x.src)
                 .slice(0, 3)
@@ -65,7 +65,7 @@ export default function ProductComponent({ items }: ProductComponentProps) {
 
           return (
             <StyledCard key={item.id} hasdetails={hasdetails}>
-              <StyledTitle>{item.company}</StyledTitle>
+              <StyledTitle> <img alt={item.company} src={item.company} /></StyledTitle>
               <StyledDetails>{item.details}</StyledDetails>
               {item.dimensions && (
                 <>

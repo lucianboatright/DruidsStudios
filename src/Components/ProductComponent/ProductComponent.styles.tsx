@@ -26,7 +26,7 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
     // borderTop: '1px solid rgb(217, 189, 119)',
   borderTop: '1px solid rgb(217, 189, 119)',
   '@media (max-width: 1000px)': {
-    borderTop: 'none',
+    // borderTop: 'none',
     margin: '10px 10px 10px 10px',
     paddingBottom: '1rem',
     paddingTop : '1rem',
@@ -45,7 +45,13 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
     gridArea: 'section1',
     maxHeight: '3rem',
     // flex: '1',
+      marginBottom: '5rem',
+
     // alignSelf: 'flex-start',
+    img: {
+      height: '100px',
+      // width: '100px',
+    }
   });
   
   export const StyledDetails = styled.section({
@@ -53,10 +59,9 @@ export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
   gridArea: 'section2',
   // flex: '2',
   // width: '20rem',
-  marginLeft: '5rem',
-  
+  marginLeft: '2rem',  
   "@media (max-width: 1000px)": {
-    fontSize: '1rem',
+    fontSize: '1.2rem',
       marginLeft: '0rem',
     },
   });
@@ -133,11 +138,13 @@ export const BottomRow = styled.div({
   gap: "2rem",
   // alignItems: "flex-end",
   marginTop: "2rem",
-  flexWrap: "wrap",
-  // overflowX: "auto",         
+  // flexWrap: "wrap",
+  overflow: "auto",         
+  whiteSpace: 'nowrap',
   paddingBottom: "2px",
   justifyContent: 'space-between',
-  marginLeft: '5rem',
+  marginLeft: '2rem',
+  scrollbarColor: ' rgb(217, 189, 119) rgb(31, 50, 37)',
   // maxWidth: '50%',
       "@media (max-width: 1000px)": {
         marginLeft: '0rem',
@@ -145,12 +152,12 @@ export const BottomRow = styled.div({
 });
 
 export const RowImg = styled.img(() => ({
-  maxHeight: `200px`,           
+  maxHeight: `300px`,           
   width: "auto",              
   display: "block",
   borderRadius: "6px",
   '@media (min-width: 691px) and (max-width: 1222px)': {
-    maxHeight: '250px',
+    maxHeight: '300px',
   },
 
   '@media (max-width: 690px)': {
