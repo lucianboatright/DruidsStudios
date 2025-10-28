@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const SectionWrapper = styled.section({
   backgroundColor: 'rgb(31, 50, 37)',
-  padding: '4rem 2rem',
+  padding: '2rem 2rem',
   textAlign: 'center',
 });
 

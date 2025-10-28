@@ -13,7 +13,7 @@ export const StyledHeader = styled.header({
     paddingRight: '5%',
     // borderTop: '1px solid',
   
-    "@media (max-width: 1032px)": {
+    "@media (max-width: 870px)": {
         marginLeft: '5%',
         marginRight: '5%',
         marginTop: '1rem',
@@ -42,7 +42,7 @@ export const StyledHeader = styled.header({
                 // borderRight: '2px solid ',
                 transform: 'scale(1.10)',
             },
-            "@media (max-width: 1032px)": {
+            "@media (max-width: 870px)": {
                 fontSize: '1.1rem',
                 padding: '0px 5px',
                 borderRadius: '0.25rem',

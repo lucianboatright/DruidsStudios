@@ -74,6 +74,42 @@ const items = [
     details: 'This was a fun job for the amazing jewelry brand vashi. We created the large rings and also created other props and objects for multiple set ups throughout the shoot.', 
     content: [Vashi1, Vashi2, Vashi3]
   },
+  { id: 10, 
+    category: "Shop", 
+    company: GshockLogo, 
+    details: 'For G-SHOCK’s campaign introducing Central Cee as their new ambassador, we built a sleek, metallic city office set that captured the brand’s urban resilience and edge. The environment featured sharp lines, reflective surfaces, and industrial textures — creating a futuristic workspace that echoed both Central Cee’s London roots and G-SHOCK’s bold identity.', 
+    content: [Gshock1, Gshock2]
+  },
+  { id: 11, 
+    category: "Shop", 
+    company: XboxLogo, 
+    details: 'For the launch of Xbox’s Avowed, we built a full-scale, fungi-covered installation known as the ‘Bloomboard’ — a haunting physical recreation of an infected character from the game. Real oyster, Lion’s Mane, and Pioppini mushrooms were grown on the sculpture, transforming visibly over time to illustrate the spread of the Dreamscourge — a magical plague central to the game’s story.', 
+    content: [Xbox1, Xbox2]
+  },
+  { id: 12, 
+    category: "Theater", 
+    company: LampLogo, 
+    details: 'We designed and hand-built 150 bespoke lamps for the Storehouse Theatre, using paper wrapped around custom metal frames. Each piece was crafted to create a warm, atmospheric glow while complementing the space’s architectural character.', 
+    content: [Lamp1, Lamp2, Lamp3]
+  },
+  { id: 6, 
+    category: "Music", 
+    company: MetromonyLogo, 
+    details: 'First of Two great fun builds here for metronomy, one the simple plane interior with some wicked camera tricks and great cotton wool clouds plus some incredible skydiving antics from the band members all doing there own stunts', 
+    content: [Metromony1, Metromony2, Metromony3]
+  },
+  { id: 7, 
+    category: "Music", 
+    company: MetromonyLogo, 
+    details: 'The second of of Two great fun builds here for metronomy, video was just four rooms with very different aesthetics all set up and cleverly stacked a nd organised in post to look as it dies in the finished product.', 
+    content: [Metromony5, Metromony6]
+  },
+  { id: 9, 
+    category: "Music", 
+    company: VersaceLogo, 
+    details: 'A full tiled bathroom, built in a backroom inside a boxing club. Very late finish and memorable derig on this one…. For a short film by versace.', 
+    content: [Versace1, Versace2]
+  },
   { id: 3, 
     category: "Music", 
     company: 'FKA Twigs & Centeral Cee', 
@@ -92,47 +128,11 @@ const items = [
     details: 'This wasnt an easy one at all! But with  A few long nights, lots of filler bendy ply and some serious swearing we got the job done. We were very happy to see the back of this stupid ufo thing ?!?!', 
     content: [Zilch1, Zilch2]
   },
-  { id: 6, 
-    category: "Music", 
-    company: MetromonyLogo, 
-    details: 'First of Two great fun builds here for metronomy, one the simple plane interior with some wicked camera tricks and great cotton wool clouds plus some incredible skydiving antics from the band members all doing there own stunts', 
-    content: [Metromony1, Metromony2, Metromony3]
-  },
-  { id: 7, 
-    category: "Music", 
-    company: MetromonyLogo, 
-    details: 'The second of of Two great fun builds here for metronomy, video was just four rooms with very different aesthetics all set up and cleverly stacked a nd organised in post to look as it dies in the finished product.', 
-    content: [Metromony5, Metromony6]
-  },
   { id: 8, 
     category: "Music", 
     company: 'Yung Lean & FKA Twigs', 
     details: 'Another really fun job this one, making these great fully operational chandeliers to mount on this great old classic car, a great video and a great song to top it off', 
     content: [YoungFka1, YoungFka2, YoungFka3]
-  },
-  { id: 9, 
-    category: "Music", 
-    company: VersaceLogo, 
-    details: 'A full tiled bathroom, built in a backroom inside a boxing club. Very late finish and memorable derig on this one…. For a short film by versace.', 
-    content: [Versace1, Versace2]
-  },
-  { id: 10, 
-    category: "Set", 
-    company: GshockLogo, 
-    details: 'For G-SHOCK’s campaign introducing Central Cee as their new ambassador, we built a sleek, metallic city office set that captured the brand’s urban resilience and edge. The environment featured sharp lines, reflective surfaces, and industrial textures — creating a futuristic workspace that echoed both Central Cee’s London roots and G-SHOCK’s bold identity.', 
-    content: [Gshock1, Gshock2]
-  },
-  { id: 11, 
-    category: "Set", 
-    company: XboxLogo, 
-    details: 'For the launch of Xbox’s Avowed, we built a full-scale, fungi-covered installation known as the ‘Bloomboard’ — a haunting physical recreation of an infected character from the game. Real oyster, Lion’s Mane, and Pioppini mushrooms were grown on the sculpture, transforming visibly over time to illustrate the spread of the Dreamscourge — a magical plague central to the game’s story.', 
-    content: [Xbox1, Xbox2]
-  },
-  { id: 12, 
-    category: "Set", 
-    company: LampLogo, 
-    details: 'We designed and hand-built 150 bespoke lamps for the Storehouse Theatre, using paper wrapped around custom metal frames. Each piece was crafted to create a warm, atmospheric glow while complementing the space’s architectural character.', 
-    content: [Lamp1, Lamp2, Lamp3]
   },
   
   // Add more as needed
@@ -159,9 +159,9 @@ export default function Builds() {
                 <StyledBox>
           
                   <FilterSection   filters={[
+                      { label: 'All', value: 'ALL' },
                       { label: 'Shop', value: 'Shop' },
                       { label: 'Theater', value: 'Theater' },
-                      { label: 'All', value: 'ALL' },
                       { label: 'Music Video', value: 'Music' },
                       { label: 'Adverts', value: 'Adverts' },
                     ]}

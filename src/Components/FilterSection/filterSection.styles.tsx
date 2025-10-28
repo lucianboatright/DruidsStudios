@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+export const StyledTitle = styled.div({
+    fontSize: '2rem',
+    textAlign: 'center',
+      display: 'none',
+    "@media (min-width: 1000px)": {
+      display: 'contents',
+      fontSize: '2.5rem',
+      marginBottom: '1rem',
+      fontWeight: '500'
+    },
+});
+
 
 export const StyledList = styled.nav({
   marginTop: '1rem',
@@ -9,7 +21,7 @@ export const StyledList = styled.nav({
     marginRight: 'auto',
       justifyContent: 'space-between',
         listStyle: 'none',
-        maxWidth: '70%',
+        maxWidth: '80%',
   "@media (max-width: 1032px)": {
     marginTop: '0rem',
   },
@@ -43,13 +55,18 @@ export const StyledButton = styled.button({
   "&::before": {
     content: "''",
     display: "inline-block",
-    width: "20px",
-    height: "20px",
     // border: "2px solid #333",
-    borderRadius: "4px",
+    borderRadius: "2px",
     background: "#fff",
     transition: "background 0.2s, border-color 0.2s",
     marginRight: "1rem",
+    width: "15px",
+    height: "15px",
+    "@media (min-width: 1000px)": {
+    height: "25px",
+    width: "25px",
+
+    },
   },
 
   "&:focus::before, &:focus-visible::before": {

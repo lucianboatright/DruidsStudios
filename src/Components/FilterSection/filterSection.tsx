@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyledButton, StyledList } from './filterSection.styles';
-import { StyledTitle } from '../../pages/Builds/Builds.styles';
+import { StyledButton, StyledList, StyledTitle } from './filterSection.styles';
 
 type FilterItem = {
   label: string;
@@ -15,8 +14,8 @@ type FilterSectionProps = {
 export function FilterSection({ filters, setActiveFilter }: FilterSectionProps) {
   return (
       <>
-        <StyledList>
    <StyledTitle>Filters:</StyledTitle>
+        <StyledList>
           {filters.map((filter, index) => (
             <React.Fragment key={filter.value}>
               {index < filters.length - 1 && 
