@@ -1,8 +1,8 @@
 import { Grid, StyledGrid, StyledTextBody, TextContainer } from './About.styles';
 import TeamCard from '../../Components/TeamCard/teamCard';
 import WhatWeDo from '../../Components/SkillSection/SkillSection';
-import ElenaImage from '../../assets/profilePics/Elena_omura.png'
-import MithilaImage from '../../assets/profilePics/Mithila_joshi.png'
+import ElenaImage from '../../assets/profilePics/OscarImage.jpg'
+import MithilaImage from '../../assets/profilePics/chalieIamge2.jpg'
 import HeaderSection from '../../Components/HeaderSection/headerSection';
 import NarBar from '../../Components/NavBar/navBar';
 import Footer from '../../Components/Footer/Footer';

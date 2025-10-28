@@ -8,8 +8,8 @@ export const Card = styled.div({
 });
 
 export const Avatar = styled.img({
-  width: '100px',
-  height: '100px',
+  width: '200px',
+  height: '200px',
   borderRadius: '50%',
   objectFit: 'cover',
   backgroundColor: 'black',

@@ -10,6 +10,8 @@ export const StyledTitle = styled.div({
 });
 
 export const GridContainer = styled.div({
+        borderTop: '1px solid rgb(217, 189, 119)',
+
       marginTop: '1rem',
       marginBottom: '1rem',
     display: 'grid',
@@ -19,8 +21,8 @@ export const GridContainer = styled.div({
     marginRight: 'auto',
     marginLeft: 'auto',
     "@media (min-width: 600px)": {
-    marginTop: '5rem',
-    marginBottom: '2rem',
+    marginTop: '1rem',
+    marginBottom: '3rem',
       gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
     },
 });
@@ -29,15 +31,16 @@ export const LogoItem = styled.div({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '0.5rem',
+  padding: '2rem',
   img: {
-    marginLeft: '2rem',
-    marginRight: '2rem',
+    marginLeft: '3rem',
+    marginRight: '3rem',
     // maxWidth: '100%',
     maxHeight: '35px',
     objectFit: 'contain',
       "@media (min-width: 600px)": {
-        maxHeight: '75px',
+        maxHeight: '100px',
+        maxWidth: '200px',
     },
   },
 });
