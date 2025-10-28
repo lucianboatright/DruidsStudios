@@ -35,7 +35,6 @@ export const LogoItem = styled.div({
   img: {
     marginLeft: '3rem',
     marginRight: '3rem',
-    // maxWidth: '100%',
     maxHeight: '35px',
     objectFit: 'contain',
       "@media (min-width: 600px)": {
