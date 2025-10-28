@@ -14,7 +14,6 @@ type FilterSectionProps = {
 export function FilterSection({ filters, setActiveFilter }: FilterSectionProps) {
   return (
       <>
-   <StyledTitle>Filters:</StyledTitle>
         <StyledList>
           {filters.map((filter, index) => (
             <React.Fragment key={filter.value}>

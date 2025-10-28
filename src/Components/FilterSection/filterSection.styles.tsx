@@ -3,9 +3,7 @@ import styled from 'styled-components'
 export const StyledTitle = styled.div({
     fontSize: '2rem',
     textAlign: 'center',
-      display: 'none',
     "@media (min-width: 1000px)": {
-      display: 'contents',
       fontSize: '2.5rem',
       marginBottom: '1rem',
       fontWeight: '500'
