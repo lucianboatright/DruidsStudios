@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledButton, StyledList, StyledTitle } from './filterSection.styles';
+import { StyledButton, StyledList } from './filterSection.styles';
 
 type FilterItem = {
   label: string;
