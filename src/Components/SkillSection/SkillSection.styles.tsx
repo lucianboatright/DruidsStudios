@@ -22,7 +22,7 @@ export const SkillsGrid = styled.div<{ columns: number }>(({ columns }) => ({
   display: 'grid',
   gridTemplateColumns: `repeat(${columns}, 1fr)`,
   gap: '2rem',
-  maxWidth: '1200px',
+  // maxWidth: '80%',
   margin: '0 auto',
   textAlign: 'left',
 

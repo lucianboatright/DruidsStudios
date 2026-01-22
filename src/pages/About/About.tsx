@@ -22,26 +22,26 @@ const team = [
 ];
 
 const skills = [
-  "Carpentry for Stage and Screen",
-  "Prop Making and Fabrication",
-  "Set Construction for Film, TV and Theatre",
-  "MIG and TIG Welding",
-  "CNC Routing and Cutting",
-  "Painting and Faux Finishes",
-  "Sculpting and 3D Texturing",
-  "Set Dressing and Finishing",
-  "Metalwork for Stage and Film",
-  "Plastics and Vacuum Forming",
-  "Model Making and Miniature Sets",
-  "3D Modelling for Set Design",
-  "Technical Drawing and Drafting",
-  "Rigging and Structural Support",
-  "Backdrops and Large-Scale Printing",
-  "Polystyrene Carving",
-  "Woodworking and Joinery",
-  "Spray Painting and Surface Treatments",
-  "On-site Set Installation",
-  "Design Support and Concept Visuals"
+  "Custom Set Design and Construction for Film, TV and Theatre",
+  "Professional Prop Making and Fabrication",
+  "Stage, Studio and Location Set Builds",
+  "Carpentry and Woodwork for Stage and Screen",
+  "Metal Fabrication, MIG and TIG Welding",
+  "CNC Routing, Cutting and Digital Fabrication",
+  "Scenic Painting, Faux Finishes and Surface Effects",
+  "Sculpture, Carving and 3D Texturing",
+  "Set Dressing, Styling and Final Finishes",
+  "Metalwork for Film, Television and Live Events",
+  "Plastics Fabrication and Vacuum Forming",
+  "Model Making, Miniatures and Scale Sets",
+  "3D Modelling and Visualisation for Set Design",
+  "Technical Drawings, CAD and Drafting",
+  "Rigging, Structural Builds and Installation",
+  "Backdrops, Scenic Elements and Large-Scale Printing",
+  "Polystyrene and Foam Carving",
+  "Spray Painting and Specialist Surface Treatments",
+  "On-Site Set Installation and Strike",
+  "Creative Design Support and Concept Development"
 ];
 
 

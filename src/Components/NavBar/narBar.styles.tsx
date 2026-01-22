@@ -9,8 +9,8 @@ export const StyledHeader = styled.header({
     paddingTop: '1.1rem',
     borderBottom: '1px solid',
     borderTop: '1px solid',
-    paddingLeft: '5%',
-    paddingRight: '5%',
+    // paddingLeft: '5%',
+    // paddingRight: '5%',
     // borderTop: '1px solid',
   
     "@media (max-width: 870px)": {
@@ -24,7 +24,7 @@ export const StyledHeader = styled.header({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        maxWidth: '80rem',
+        maxWidth: '89%',
         marginLeft: 'auto',
         marginRight: 'auto',
         

@@ -23,7 +23,7 @@ export const GridContainer = styled.div({
     "@media (min-width: 600px)": {
     marginTop: '1rem',
     marginBottom: '3rem',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
     },
 });
 
@@ -31,7 +31,9 @@ export const LogoItem = styled.div({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '2rem',
+  // padding: '2rem',
+  paddingTop: '2rem',
+  paddingBottom: '2rem',
   img: {
     marginLeft: '3rem',
     marginRight: '3rem',

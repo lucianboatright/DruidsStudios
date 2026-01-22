@@ -70,7 +70,11 @@ export default function Home() {
           />
        </StyledNavMobile>
         <StyledMainImage>
-          <img src={MainImage} alt='Lgog' />
+          <img src={MainImage} alt='Lgog' fetchPriority="high" />
+
+                    {/* <picture>
+            <link rel='preload' as='image' href='../../assets/images/testworkshop.jpg' imageSizes="100vw" />
+          </picture> */}
         </StyledMainImage>
         <StyledNavDesktop>
           <NarBar

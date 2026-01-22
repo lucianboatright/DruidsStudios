@@ -21,7 +21,7 @@ export const StyledTextBody = styled.div({
       margin: '2% 5%',
       "@media (min-width: 765px)": {
           fontSize: '1.5rem',
-          margin: '2.5% 10%',
+          margin: '2.5% 20%',
       },
 });
 
