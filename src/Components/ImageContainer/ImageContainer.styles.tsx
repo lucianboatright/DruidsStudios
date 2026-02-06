@@ -34,7 +34,7 @@ export const StyledIcons = styled.nav<{ greaterthanthree?: boolean}>(props => ({
 
     "@media (max-width: 1000px)": {
         display: 'block',
-        overflow: 'visible',
+        // overflow: 'visible',
         height: 'auto',
     },
 
