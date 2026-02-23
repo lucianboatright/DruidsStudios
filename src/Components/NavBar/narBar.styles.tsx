@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledHeader = styled.header({
     // marginRight: '5%',
     // marginLeft: '5%',
-    marginTop: '2rem',
+    // marginTop: '2rem',
     // marginBottom: '2rem',
     paddingBottom: '1.2rem',
     paddingTop: '1.1rem',

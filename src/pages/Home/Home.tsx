@@ -1,4 +1,4 @@
-import MainImage from '../../assets/images/testworkshop.jpg'
+import MainImage from '../../assets/images/IMG_4644.jpg'
 import { StyledMainImage, StyledNavDesktop, StyledNavMobile, StyledTextBody } from './Home.styles';
 import LogoGrid from '../../Components/LogoGrid/LogoGrid';
 import WhatWeDo from '../../Components/SkillSection/SkillSection';

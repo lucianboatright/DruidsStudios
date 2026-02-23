@@ -8,11 +8,11 @@ export const StyledMainImage = styled.div({
     maxWidth: '100%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginBottom: '2rem',
-    marginTop: '2rem',
+    // marginBottom: '2rem',
+    marginTop: '1rem',
     "@media (min-width: 600px)": {
-    marginBottom: '4rem',
-    marginTop: '4rem',
+    // marginBottom: '4rem',
+    // marginTop: '4rem',
     },
   },
 });
