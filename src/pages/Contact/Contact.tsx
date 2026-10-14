@@ -41,9 +41,7 @@ export default function Contact() {
                 Phone Number: 07534717738
               </StyledContactText>
                <StyledContactTitle>
-                              {/* <StyledContactText> */}
-                {/* Apologies for recent Website technical difficulties Please reach out if you did not hear back on initial quote */}
-                              {/* </StyledContactText> */}
+      
                               Apologies recent server issues caused initial quotes not to be received, Please reach out if you have not heard back. Many thanks
 
               </StyledContactTitle>
