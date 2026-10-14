@@ -84,7 +84,7 @@ export default function ProductComponent({ items }: ProductComponentProps) {
                       role="button"
                       tabIndex={0}
                       onClick={() => open(img.src, img.alt)}
-                      onKeyDown={(e) => {
+                      onKeyDown={(e: React.KeyboardEvent<HTMLElement>) => {
                         if (e.key === 'Enter' || e.key === ' ') open(img.src, img.alt);
                       }}
                     />
