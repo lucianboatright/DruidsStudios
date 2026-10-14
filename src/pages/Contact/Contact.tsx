@@ -34,10 +34,10 @@ export default function Contact() {
                 </ul>
               </StyledContactText>
               <StyledContactText>
-                Email: Druids@gmail.com
+                Email: Druidldn@gmail.com
               </StyledContactText>
               <StyledContactText>
-                Phone Number: 07503876253
+                Phone Number: 07534717738
               </StyledContactText>
             </StyledContainer>
               <ContactForm />
