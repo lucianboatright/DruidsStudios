@@ -20,11 +20,13 @@ export default function Contact() {
                 />
           <ContactContainer>
             <StyledContainer>
+           
               <StyledContactTitle>
                 Feel free to reach out to us for a consultation or quote.
               </StyledContactTitle>
               <StyledContactText>
-                Required Details: 
+              <StyledContactText>
+                Helpful Details: 
                 <ul>
 
                   <li>Everything start with an idea</li>
@@ -33,14 +35,20 @@ export default function Contact() {
                   <li>Budget and material choice</li>
                 </ul>
               </StyledContactText>
-              <StyledContactText>
                 Email: Druidldn@gmail.com
               </StyledContactText>
               <StyledContactText>
                 Phone Number: 07534717738
               </StyledContactText>
+               <StyledContactTitle>
+                              {/* <StyledContactText> */}
+                {/* Apologies for recent Website technical difficulties Please reach out if you did not hear back on initial quote */}
+                              {/* </StyledContactText> */}
+                              Apologies recent server issues caused initial quotes not to be received, Please reach out if you have not heard back. Many thanks
+
+              </StyledContactTitle>
             </StyledContainer>
-              <ContactForm />
+              {/* <ContactForm /> */}
           </ContactContainer>
         <Footer />
     </>
