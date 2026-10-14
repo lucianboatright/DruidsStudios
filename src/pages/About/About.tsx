@@ -10,7 +10,7 @@ import Footer from '../../Components/Footer/Footer';
 const team = [
     {
       image: ElenaImage,
-      name: 'Oscar Coackley',
+      name: 'Oscar Coakley',
       title: 'CEO, Head of Metal work',
     },
     {
