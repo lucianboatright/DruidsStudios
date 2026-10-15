@@ -14,8 +14,8 @@ export default function Footer() {
             </StyledContainerFooter>
             <div>
               <StyledFooterItalics>London N1 5SA :Address</StyledFooterItalics>
-              <StyledFooterBracketed>Druidldn@gmail.com :Email</StyledFooterBracketed>
-              <StyledFooterBracketed>0787265169 :Phone</StyledFooterBracketed>
+              <StyledFooterBracketed>Druid.ldn@gmail.com :Email</StyledFooterBracketed>
+              <StyledFooterBracketed>07534717738 :Phone</StyledFooterBracketed>
             </div>
       </FooterContainer>
     )
