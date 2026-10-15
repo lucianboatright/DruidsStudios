@@ -35,7 +35,7 @@ export default function Contact() {
                   <li>Budget and material choice</li>
                 </ul>
               </StyledContactText>
-                Email: Druidldn@gmail.com
+                Email: Druid.ldn@gmail.com
               </StyledContactText>
               <StyledContactText>
                 Phone Number: 07534717738
